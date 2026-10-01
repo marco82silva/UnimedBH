@@ -1,0 +1,2023 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26092.142" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.26092.00142">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <SolutionPluginAssemblies>
+    <PluginAssembly FullName="UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginAssemblyId="cb791a58-217a-4973-b0d0-5b2e1b09e398" CustomizationLevel="1">
+      <IsolationMode>2</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/UNIMEDBHApplication-CB791A58-217A-4973-B0D0-5B2E1B09E398/UNIMEDBHApplication.dll</FileName>
+      <PluginTypes>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.Agendamento.AdicionarMembroRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="6c01315e-d297-43cb-a3a0-7a18624a137c" Name="UNIMEDBH.Application.Action.Agendamento.AdicionarMembroRegionalizacao">
+          <FriendlyName>85ba280b-922c-4f02-8ba5-39578b7d176c</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.Agendamento.BuscarMembrosRegionalizacaoPromotores, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="31cd3a19-f868-4832-9725-d4628d1cd17b" Name="UNIMEDBH.Application.Action.Agendamento.BuscarMembrosRegionalizacaoPromotores">
+          <FriendlyName>478fff05-a64a-48d5-83f2-6d94801fdca5</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.Agendamento.ReservaMembroRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="919cc816-9914-47d8-a7a9-69b74a2be34c" Name="UNIMEDBH.Application.Action.Agendamento.ReservaMembroRegionalizacao">
+          <FriendlyName>8a8fdd40-bd7e-426e-aad8-f5150d41b4ff</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.Cliente.BuscarDadosClientesPor_CPF_CNPJ, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="e00c4c6a-705d-49f1-823b-d194edf03463" Name="UNIMEDBH.Application.Action.Cliente.BuscarDadosClientesPor_CPF_CNPJ">
+          <FriendlyName>a2ab8d3b-bd67-473b-80e1-59876f6e4720</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.PessoaFisica.SerproPessoaFisicaAPI, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="bd1ae5d5-8d0b-4162-b651-3aeda151b361" Name="UNIMEDBH.Application.Action.PessoaFisica.SerproPessoaFisicaAPI">
+          <FriendlyName>5a5c5102-3254-4fe1-ae6f-3b724871bd11</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Action.PessoaJuridica.SerproPessoaJuridicaAPI, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="0d8766f7-ad5d-4dda-a8d2-fe62be243111" Name="UNIMEDBH.Application.Action.PessoaJuridica.SerproPessoaJuridicaAPI">
+          <FriendlyName>3b25c180-3028-4c3d-8bab-829b244b95bf</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Agendamento.BloqueioAgendamentoSimultaneo, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="a65a0562-40eb-4a2a-bd5b-b62f471a58b6" Name="UNIMEDBH.Application.Plugin.Agendamento.BloqueioAgendamentoSimultaneo">
+          <FriendlyName>aa4be935-17d1-4c5b-a5be-7dcfa9909dcc</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Agendamento.FinalizarRegistroPai, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="09ae68f7-a31d-49ad-a1f5-e560b8b8c213" Name="UNIMEDBH.Application.Plugin.Agendamento.FinalizarRegistroPai">
+          <FriendlyName>8775c697-2710-47d5-8ecf-036012d22080</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="c85d1c94-9f98-4ce8-9d73-27377d23ba85" Name="UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes">
+          <FriendlyName>42790dfc-436a-4bba-a0ae-d3022fdc9625</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.AtividadeServico.ValidacaoAreaDeRisco, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="d6ba6d38-6968-49e3-8ecb-5902e7e0e1ff" Name="UNIMEDBH.Application.Plugin.AtividadeServico.ValidacaoAreaDeRisco">
+          <FriendlyName>fcae24ff-1ec8-49c5-af7f-6e84e6eefcb1</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="8e96eea2-5db4-45ae-a623-09d67e20b910" Name="UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF">
+          <FriendlyName>a7166e02-d3c1-4288-b9e7-c4f494677cd5</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="e680b50b-887c-4309-9cf7-456757e24da8" Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica">
+          <FriendlyName>56a74f90-6c45-40d0-9554-28306ce7512c</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="6913d0bc-a2aa-4545-9c97-dbfc208ccd21" Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato">
+          <FriendlyName>9cf12bc6-c846-440f-a68b-a7ce3470785e</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="b4eae65f-82b8-4c60-a08a-e5be73a0eb9e" Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica">
+          <FriendlyName>4ad9cdca-e966-4f30-814c-ae834897d6a3</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="96ae9862-b1a4-451a-ae3a-698ba8c9329e" Name="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa">
+          <FriendlyName>4d605773-0970-4294-a079-a632275e7069</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapaPerdido, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="931632ea-ce07-43ec-8f64-6dff393a3c70" Name="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapaPerdido">
+          <FriendlyName>6b024e3a-ba0f-46b2-b84f-32e192d889ce</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherCamposPreQualificacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="8c6ea948-89cf-465b-aef9-a723dbef0d4d" Name="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherCamposPreQualificacao">
+          <FriendlyName>6f661c3a-469b-445e-b7b2-b90e212ae194</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="a60ae839-c937-4d01-be65-d727befbae4e" Name="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao">
+          <FriendlyName>256a4964-485d-4389-949c-50d6889941da</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.QualificacaoClientePotencial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="9856700d-263f-47f4-886b-d95fde393251" Name="UNIMEDBH.Application.Plugin.ClientePotencial.QualificacaoClientePotencial">
+          <FriendlyName>15aff5ee-a9bd-46ab-b8bc-71d74fc1cab2</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="daf0a64b-d432-4c5a-888e-9c81334e99c9" Name="UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara">
+          <FriendlyName>9b23dd68-9a32-46ff-8377-367aa2609588</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.SituacaoCadastralSerpro, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="93b8b214-d33a-414d-b49a-021fafd5fb40" Name="UNIMEDBH.Application.Plugin.ClientePotencial.SituacaoCadastralSerpro">
+          <FriendlyName>84834ca2-e859-4b91-aac7-09f4808065b4</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="f6b71dec-dc70-4e93-80de-ec239fcf4b14" Name="UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade">
+          <FriendlyName>58f706d9-ab33-4098-a901-6563d162e4e4</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.ValidarCamposObrigatorios, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="f55a225b-8300-46dc-b587-7e759210749b" Name="UNIMEDBH.Application.Plugin.ClientePotencial.ValidarCamposObrigatorios">
+          <FriendlyName>8475d39e-ea97-4ad9-bd3b-127b72e2c09c</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="68ce5073-3f97-4054-ac37-0a8520c53a92" Name="UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao">
+          <FriendlyName>91eaf056-8595-4379-9005-a7b944d4d599</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Compromisso.ValidacaoAreaDeRisco, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="91412ba6-40c1-45f9-bc90-1f546e7d328c" Name="UNIMEDBH.Application.Plugin.Compromisso.ValidacaoAreaDeRisco">
+          <FriendlyName>45414bac-2979-437f-81aa-8330807e4e30</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="b31f8ffd-6366-4721-8b04-287711cf9acb" Name="UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica">
+          <FriendlyName>b3fa3c8b-e34f-4467-a014-90be4a917e93</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="b5bfe0e4-f273-42b8-9f43-f9fac1873a1b" Name="UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro">
+          <FriendlyName>57c867e2-75ff-4c0d-b859-e128b4ba3062</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="aec49ea0-d687-46de-8031-26d7a3a8f5eb" Name="UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao">
+          <FriendlyName>19635f39-a42e-4057-a3ea-0099d0c6a82e</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Conta.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="af65b839-bec9-4c55-be1d-b967be2c132f" Name="UNIMEDBH.Application.Plugin.Conta.RemoverMascara">
+          <FriendlyName>5519c517-a873-40a6-9929-42c8557a7412</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Contato.CriacaoVinculoContato, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="f9494d37-da9a-498c-82bc-7c2ee64d1bb7" Name="UNIMEDBH.Application.Plugin.Contato.CriacaoVinculoContato">
+          <FriendlyName>6a25b6d8-fcec-429a-8a20-d54914955991</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Contato.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="799502b7-5009-46c8-8bd6-ccb8ad69213b" Name="UNIMEDBH.Application.Plugin.Contato.RemoverMascara">
+          <FriendlyName>2f7477a5-ca66-4169-b58d-1fe128d5a90c</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="20feee78-d139-4773-9110-69c551cdd60e" Name="UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes">
+          <FriendlyName>12278a9e-f069-4962-8219-affe5bc5c9ce</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Integracao.EnviarRequestSalutaris, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="f4be4154-44d3-4909-a56b-1b7234676e5c" Name="UNIMEDBH.Application.Plugin.Integracao.EnviarRequestSalutaris">
+          <FriendlyName>6609b007-4ff4-4219-a8e6-d803af5a36ae</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Integracao.Reprocessamento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="67b7d9f1-9141-4fcf-9d91-1f29f27cc323" Name="UNIMEDBH.Application.Plugin.Integracao.Reprocessamento">
+          <FriendlyName>8aeed301-6a75-4e96-8c27-9b282f81483a</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="74b22c7d-a4fa-4ef0-a424-e7322bb47834" Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager">
+          <FriendlyName>6d67fed8-142b-4362-9889-2b1d9f129bb3</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="388be899-adce-4388-9bea-8f7456da4e41" Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor">
+          <FriendlyName>022c2841-295f-4bcb-94f1-e7ddb889ddf2</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="1ddcb509-604e-4f79-8044-2488005df974" Name="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento">
+          <FriendlyName>13dad9b5-524a-4fe7-89a4-22e7cd3ee3f0</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionarEquipeProprietariaFilaNaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="8ceb892a-91aa-49e1-b1b5-ef112521ad69" Name="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionarEquipeProprietariaFilaNaOcorrencia">
+          <FriendlyName>5fab32e0-8450-44b6-b6de-75c59ad918d7</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.AteracaoStatusReclassificada, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="c06807ef-3472-459a-96b4-7f17333ebf95" Name="UNIMEDBH.Application.Plugin.Ocorrencia.AteracaoStatusReclassificada">
+          <FriendlyName>c874dd81-0823-4b28-86f0-7a8e1cfde242</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.ConcatenacaoCamposEnvioParaArea, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="29ba235f-fcdd-4567-9408-fb899226aea2" Name="UNIMEDBH.Application.Plugin.Ocorrencia.ConcatenacaoCamposEnvioParaArea">
+          <FriendlyName>d1d0930e-fc84-44fd-b912-f4d0c341cdce</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="99d68192-c2d8-4d7e-b23b-395578dd56a5" Name="UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta">
+          <FriendlyName>e0148a2e-6645-4a55-8c87-45fd2b43b619</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.CriacaoProtocoloIntegracao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="3b059810-83f0-4988-966f-9558e8fb9a48" Name="UNIMEDBH.Application.Plugin.Ocorrencia.CriacaoProtocoloIntegracao">
+          <FriendlyName>48efcda2-c358-44bb-a45e-23d06d93b324</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="1c64e364-2b12-4a9c-afd2-1b0ccb66ee22" Name="UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente">
+          <FriendlyName>d2dda6e9-038b-4bdb-a8fb-f69c39542232</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.IntegracaoEmTratamento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="65dc1109-b108-47b0-b5eb-047c1c602b8c" Name="UNIMEDBH.Application.Plugin.Ocorrencia.IntegracaoEmTratamento">
+          <FriendlyName>266a979e-bfe7-4d53-963a-a844b586a2a6</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="c804cda3-03f4-4d6e-9e34-e4e7b4136a9f" Name="UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia">
+          <FriendlyName>58150729-067c-450e-aff7-be1bb3f150de</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.ReaberturaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="97897f46-b224-4b01-8b50-7416ab3eea73" Name="UNIMEDBH.Application.Plugin.Ocorrencia.ReaberturaOcorrencia">
+          <FriendlyName>a4f0de55-504d-434f-9c97-53c3c27548a3</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="294b8d9a-d890-4a78-a1ff-2059e86cfb0b" Name="UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara">
+          <FriendlyName>16600bb4-52cc-4dbd-83af-3caad5606ba4</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Ocorrencia.RoteamentoOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="e1034847-ff71-432d-af52-2f9e72eccf4a" Name="UNIMEDBH.Application.Plugin.Ocorrencia.RoteamentoOcorrencia">
+          <FriendlyName>fd111c14-8fcd-45eb-8055-ee71d722e022</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Oportunidade.AvancoBPF, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="b10d28e6-1382-4629-8cf6-621c4d90711f" Name="UNIMEDBH.Application.Plugin.Oportunidade.AvancoBPF">
+          <FriendlyName>0c1f2c50-31a3-4efa-9c7e-d45ef09c1501</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="66d1dcbb-1ccb-4d7b-a89f-1dc8fe448fee" Name="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa">
+          <FriendlyName>cdcda17e-c2f9-4300-a454-f245e9c06be9</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapaPerdido, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="3a90cca5-a14c-4108-a219-9c524744f563" Name="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapaPerdido">
+          <FriendlyName>dd5f72f5-03d8-44a1-9b07-88016f8ed190</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.Oportunidade.RelacioneOppClientePotencial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="b53f0958-41b4-4b3e-a8fc-460e2cf584b4" Name="UNIMEDBH.Application.Plugin.Oportunidade.RelacioneOppClientePotencial">
+          <FriendlyName>3fc6ad85-636a-4985-b8a4-0534fbf508c0</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="1835b329-c750-4473-a82e-98d7df5d4f0b" Name="UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao">
+          <FriendlyName>446f0a61-16b0-430a-9ea9-cf74ced1bbeb</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="466c1689-0203-4f7c-bbc1-39772ea0a8b9" Name="UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia">
+          <FriendlyName>031d2ed8-aabf-4889-8eeb-82a77dee3f0f</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.SolicitacaoCadastro.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="206e9a7f-8ebb-400c-a9c3-e6cfe7bbe8b7" Name="UNIMEDBH.Application.Plugin.SolicitacaoCadastro.RemoverMascara">
+          <FriendlyName>7f8725b5-a985-427d-8f1d-121cc8589c95</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.TarefaAtendimento.SalvarUltimoStatusAntesConclusao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="7367a117-ff57-416f-be14-123932dfb41d" Name="UNIMEDBH.Application.Plugin.TarefaAtendimento.SalvarUltimoStatusAntesConclusao">
+          <FriendlyName>96e339d5-9a4a-44c2-84cc-5ec871cc7e85</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="eca30409-d529-4aa6-8c87-08271087d07f" Name="UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial">
+          <FriendlyName>29b49ead-6b01-48bf-8526-a028cab926fa</FriendlyName>
+        </PluginType>
+        <PluginType AssemblyQualifiedName="UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f" PluginTypeId="6dd4ca14-83e6-4c3d-9e14-2335c578134f" Name="UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial">
+          <FriendlyName>58edf8c3-b755-4af4-8341-fe4e62fb96fb</FriendlyName>
+        </PluginType>
+      </PluginTypes>
+    </PluginAssembly>
+  </SolutionPluginAssemblies>
+  <SdkMessageProcessingSteps>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.Agendamento.AdicionarMembroRegionalizacao: ubh_BuscarMembroRegionalizacaoCalandario of any Entity" SdkMessageProcessingStepId="{138f200a-5d33-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>310f3271-5c33-f011-8c4e-002248de6065</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.Agendamento.AdicionarMembroRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>6c01315e-d297-43cb-a3a0-7a18624a137c</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Action.Agendamento.AdicionarMembroRegionalizacao: ubh_BuscarMembroRegionalizacaoCalandario of any Entity</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.Agendamento.BuscarMembrosRegionalizacaoPromotores: ubh_BuscarMembrosRegionalizacaoPromotores of any Entity" SdkMessageProcessingStepId="{ce11928b-7462-f011-bec2-002248de6065}">
+      <SdkMessageId>c2d4caa8-6462-f011-bec2-000d3ac0d920</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.Agendamento.BuscarMembrosRegionalizacaoPromotores, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>31cd3a19-f868-4832-9725-d4628d1cd17b</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Action.Agendamento.BuscarMembrosRegionalizacaoPromotores: ubh_BuscarMembrosRegionalizacaoPromotores of any Entity</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.Agendamento.ReservaMembroRegionalizacao: ubh_ReservaMembroRegionalizacao of any Entity" SdkMessageProcessingStepId="{a6899c5f-bc05-f111-8407-000d3ac0d94f}">
+      <SdkMessageId>832fb28f-b905-f111-8407-6045bd3a08f2</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.Agendamento.ReservaMembroRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>919cc816-9914-47d8-a7a9-69b74a2be34c</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.Cliente.BuscarDadosClientesPor_CPF_CNPJ: ubh_UNIMEDBH_BUSCAR_DADOS_POR_CPF_CNPJ of any Entity" SdkMessageProcessingStepId="{27459049-76cf-f011-8544-6045bd3bff0c}">
+      <SdkMessageId>8ad5d9bc-74cf-f011-8544-002248e0b80f</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.Cliente.BuscarDadosClientesPor_CPF_CNPJ, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>e00c4c6a-705d-49f1-823b-d194edf03463</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.PessoaFisica.SerproPessoaFisicaAPI: ubh_UNIMEDBHAPISERPROPESSOAFISICA of any Entity" SdkMessageProcessingStepId="{2daac9da-9ea3-f011-bbd3-6045bd3bff0c}">
+      <SdkMessageId>91a4b4e3-9aa3-f011-bbd3-6045bd3bff0c</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.PessoaFisica.SerproPessoaFisicaAPI, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>bd1ae5d5-8d0b-4162-b651-3aeda151b361</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Action.PessoaJuridica.SerproPessoaJuridicaAPI: ubh_UNIMEDBHAPISERPROPESSOAJURIDICA of any Entity" SdkMessageProcessingStepId="{04c11ffc-fd9a-f011-bbd2-000d3ac09520}">
+      <SdkMessageId>5fda236e-d69a-f011-b41b-6045bd3bff0c</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Action.PessoaJuridica.SerproPessoaJuridicaAPI, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>0d8766f7-ad5d-4dda-a8d2-fe62be243111</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Agendamento.BloqueioAgendamentoSimultaneo: Create of appointment" SdkMessageProcessingStepId="{094bbdf1-154d-f011-877b-000d3ac0d920}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Agendamento.BloqueioAgendamentoSimultaneo, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>a65a0562-40eb-4a2a-bd5b-b62f471a58b6</PluginTypeId>
+      <PrimaryEntity>appointment</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.Agendamento.BloqueioAgendamentoSimultaneo: Create of appointment</Description>
+      <FilteringAttributes>ubh_motivo_reagendamento,regardingobjectid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.32</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Agendamento.FinalizarRegistroPai: Create of appointment" SdkMessageProcessingStepId="{d59a06fd-3c51-f011-877b-000d3ac0d920}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Agendamento.FinalizarRegistroPai, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>09ae68f7-a31d-49ad-a1f5-e560b8b8c213</PluginTypeId>
+      <PrimaryEntity>appointment</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.Agendamento.FinalizarRegistroPai: Create of appointment</Description>
+      <FilteringAttributes>ubh_reagendamento</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.33</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes: Create of ubh_ata" SdkMessageProcessingStepId="{d23d1b2c-8898-f011-b41b-002248e0aa32}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>c85d1c94-9f98-4ce8-9d73-27377d23ba85</PluginTypeId>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_ataid,ubh_nome_representante_corretora,ubh_participantes_cliente,ubh_participantes_corretora,ubh_tipoassinatura</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes: Update of ubh_ata" SdkMessageProcessingStepId="{a9c8eb8c-8898-f011-b41b-6045bd3bff0c}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ata.ValidarPreenchimentoEmailParticipantes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>c85d1c94-9f98-4ce8-9d73-27377d23ba85</PluginTypeId>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_nome_representante_corretora,ubh_participantes_cliente,ubh_tipoassinatura</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{b19bc9b6-8898-f011-b41b-6045bd3bff0c}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_nome_representante_corretora,ubh_participantes_cliente,ubh_tipoassinatura</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.AtividadeServico.ValidacaoAreaDeRisco: Create of serviceappointment" SdkMessageProcessingStepId="{72273c8c-1f1d-f011-9989-00224836f5c1}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.AtividadeServico.ValidacaoAreaDeRisco, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>d6ba6d38-6968-49e3-8ecb-5902e7e0e1ff</PluginTypeId>
+      <PrimaryEntity>serviceappointment</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.AtividadeServico.ValidacaoAreaDeRisco: Create of serviceappointment</Description>
+      <FilteringAttributes>regardingobjectid</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF: Create of lead" SdkMessageProcessingStepId="{aef7424e-1f1a-f011-998a-000d3ac0d920}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>8e96eea2-5db4-45ae-a623-09d67e20b910</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF: Create of lead</Description>
+      <FilteringAttributes>address1_line3,address1_postalcode,address1_city,ubh_cnpj,ubh_cpf,emailaddress1,ubh_endereco_aprovado,address1_stateorprovince,address1_line1,ubh_numero_endereco,ubh_quantidade_vidas_novas,ubh_tipo_cliente</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{b09f5c85-1f1a-f011-998a-000d3a887e8d}</SdkMessageProcessingStepImageId>
+          <Attributes>address1_city,address1_line1,address1_line3,address1_postalcode,address1_stateorprovince,ubh_canal_entrada,ubh_cnpj,ubh_cpf,ubh_endereco_aprovado,ubh_numero_endereco,ubh_origem_registro,ubh_quantidade_vidas_novas,ubh_tipo_atendimento_lista</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Id</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF: Update of lead" SdkMessageProcessingStepId="{ed3a62d8-1f1a-f011-998a-002248de6065}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>8e96eea2-5db4-45ae-a623-09d67e20b910</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.AvancoBPF: Update of lead</Description>
+      <FilteringAttributes>address1_city,address1_line1,address1_line3,address1_postalcode,address1_stateorprovince,emailaddress1,ubh_canal_entrada,ubh_cnpj,ubh_cpf,ubh_data_atendimento,ubh_endereco_aprovado,ubh_numero_endereco,ubh_origem_registro,ubh_qualificar,ubh_quantidade_vidas_novas,ubh_tipo_atendimento_lista,ubh_tipo_cliente_lista</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{63d5910a-201a-f011-998a-000d3a887e8d}</SdkMessageProcessingStepImageId>
+          <Attributes>address1_city,address1_line1,address1_line3,address1_postalcode,address1_stateorprovince,emailaddress1,ubh_canal_entrada,ubh_cnpj,ubh_cpf,ubh_data_atendimento,ubh_endereco_aprovado,ubh_numero_endereco,ubh_origem_registro,ubh_qualificar,ubh_quantidade_vidas_novas,ubh_tipo_atendimento_lista</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica: Create of lead" SdkMessageProcessingStepId="{d5886634-6fc5-f011-8543-002248df9696}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>e680b50b-887c-4309-9cf7-456757e24da8</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>leadid,ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica: Update of lead" SdkMessageProcessingStepId="{a3c22551-88da-f011-8543-000d3ac0d94f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>e680b50b-887c-4309-9cf7-456757e24da8</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato: Create of lead" SdkMessageProcessingStepId="{38c1ddaf-08d1-f011-8544-6045bd3bff0c}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>6913d0bc-a2aa-4545-9c97-dbfc208ccd21</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato: Update of lead" SdkMessageProcessingStepId="{d4e6ef67-09d1-f011-8544-002248deb25e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoContato, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>6913d0bc-a2aa-4545-9c97-dbfc208ccd21</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>address1_telephone1,emailaddress1,mobilephone,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PosImage">
+          <SdkMessageProcessingStepImageId>{c57060fe-09d1-f011-8544-002248deb25e}</SdkMessageProcessingStepImageId>
+          <Attributes>address1_city,address1_line1,address1_line2,address1_line3,address1_postalcode,address1_stateorprovince,address1_telephone1,emailaddress1,emailaddress2,firstname,fullname,lastname,leadid,mobilephone,preferredcontactmethodcode,telephone1,telephone3,ubh_cnpj,ubh_cpf,ubh_numero_endereco</Attributes>
+          <EntityAlias>PosImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica: Create of lead" SdkMessageProcessingStepId="{28a197b8-5ba8-f011-bbd3-6045bd3bff0c}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b4eae65f-82b8-4c60-a08a-e5be73a0eb9e</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>leadid,ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica: Update of lead" SdkMessageProcessingStepId="{bec5b193-8dda-f011-8543-000d3ac0d94f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.CriacaoSociosPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b4eae65f-82b8-4c60-a08a-e5be73a0eb9e</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa: Create of ubh_cliente_potencial_oportunidade" SdkMessageProcessingStepId="{239e82bf-bd25-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>96ae9862-b1a4-451a-ae3a-698ba8c9329e</PluginTypeId>
+      <PrimaryEntity>ubh_cliente_potencial_oportunidade</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa: Create of ubh_cliente_potencial_oportunidade</Description>
+      <FilteringAttributes>processid,businessprocessflowinstanceid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa: Update of ubh_cliente_potencial_oportunidade" SdkMessageProcessingStepId="{b0d137eb-c425-f011-8c4e-002248de6065}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>96ae9862-b1a4-451a-ae3a-698ba8c9329e</PluginTypeId>
+      <PrimaryEntity>ubh_cliente_potencial_oportunidade</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapa: Update of ubh_cliente_potencial_oportunidade</Description>
+      <FilteringAttributes>traversedpath</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{0403e075-c525-f011-8c4d-000d3a887e8d}</SdkMessageProcessingStepImageId>
+          <Attributes>traversedpath,activestageid,bpf_leadid,bpf_opportunityid</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapaPerdido: SetStateDynamicEntity of lead" SdkMessageProcessingStepId="{4dfb98ea-8327-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>1dbebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapaPerdido, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>931632ea-ce07-43ec-8f64-6dff393a3c70</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.MonitoramentoTempoEtapaPerdido: SetStateDynamicEntity of lead</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherCamposPreQualificacao: Update of lead" SdkMessageProcessingStepId="{38ffc522-33bb-f011-bbd3-002248deb25e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.PreencherCamposPreQualificacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>8c6ea948-89cf-465b-aef9-a723dbef0d4d</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_qualificar</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>3</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{0adc8cd0-42b8-f111-aaae-6045bd3c308d}</SdkMessageProcessingStepImageId>
+          <Attributes>companyname,firstname,lastname,ubh_tipo_atendimento_lista</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao: Create of lead" SdkMessageProcessingStepId="{3cfa9bec-9c1b-f011-998a-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>a60ae839-c937-4d01-be65-d727befbae4e</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao: Create of lead</Description>
+      <FilteringAttributes>address1_line3,address1_city</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao: Update of lead" SdkMessageProcessingStepId="{9c36f034-9d1b-f011-998a-002248de6065}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>a60ae839-c937-4d01-be65-d727befbae4e</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.PreencherRegionalizacao: Update of lead</Description>
+      <FilteringAttributes>address1_line3,address1_city</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{3d9c1aa8-9d1b-f011-998a-000d3a887e8d}</SdkMessageProcessingStepImageId>
+          <Attributes>address1_line3,address1_city</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.QualificacaoClientePotencial: Update of lead" SdkMessageProcessingStepId="{8db48e87-f158-f011-bec2-002248de6065}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.QualificacaoClientePotencial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>9856700d-263f-47f4-886b-d95fde393251</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.QualificacaoClientePotencial: Update of lead</Description>
+      <FilteringAttributes>ubh_qualificar</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara: Create of lead" SdkMessageProcessingStepId="{f6d5176e-4d36-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>daf0a64b-d432-4c5a-888e-9c81334e99c9</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>mobilephone,ubh_cnpj,ubh_cpf,telephone1,address1_telephone1</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara: Update of lead" SdkMessageProcessingStepId="{a0691a83-4e36-f011-8c4e-002248de6065}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>daf0a64b-d432-4c5a-888e-9c81334e99c9</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>mobilephone,ubh_cnpj,ubh_cpf,telephone1,address1_telephone1</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.SituacaoCadastralSerpro: Update of lead" SdkMessageProcessingStepId="{e4885fed-339e-f011-bbd2-6045bd38718f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.SituacaoCadastralSerpro, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>93b8b214-d33a-414d-b49a-021fafd5fb40</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_qualificar</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{d45b3205-349e-f011-bbd2-6045bd3bff0c}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_cnpj,ubh_codigo_natureza_juridica,ubh_cpf,ubh_data_abertura_empresa,ubh_data_consulta_receita_federal,ubh_qualificar,ubh_tipo_atendimento_lista</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade: Create of lead" SdkMessageProcessingStepId="{bc7f05b8-141a-f011-998a-000d3ac0d920}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>f6b71dec-dc70-4e93-80de-ec239fcf4b14</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade: Create of lead</Description>
+      <FilteringAttributes>leadid,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade: Update of lead" SdkMessageProcessingStepId="{bbb12d97-151a-f011-998a-000d3ac0d920}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>f6b71dec-dc70-4e93-80de-ec239fcf4b14</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.ClientePotencial.ValidacaoDuplicidade: Update of lead</Description>
+      <FilteringAttributes>ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.ValidarCamposObrigatorios: Update of lead" SdkMessageProcessingStepId="{858bc97a-3ab3-f011-bbd2-002248dece22}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.ValidarCamposObrigatorios, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>f55a225b-8300-46dc-b587-7e759210749b</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_qualificar</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao: Create of lead" SdkMessageProcessingStepId="{1d9f5d4b-46ac-f111-aaac-002248df36f9}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>68ce5073-3f97-4054-ac37-0a8520c53a92</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao: Update of lead" SdkMessageProcessingStepId="{5c3b3fb6-46ac-f111-aaac-6045bd3c308d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.ClientePotencial.VinculoProprietarioCnpjMatriz_Atualizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>68ce5073-3f97-4054-ac37-0a8520c53a92</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{d19bf475-7aac-f111-aaac-00224836b0b2}</SdkMessageProcessingStepImageId>
+          <Attributes>ownerid,ubh_cnpj</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Compromisso.ValidacaoAreaDeRisco: Create of appointment" SdkMessageProcessingStepId="{55ff77c9-301d-f011-9989-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Compromisso.ValidacaoAreaDeRisco, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>91412ba6-40c1-45f9-bc90-1f546e7d328c</PluginTypeId>
+      <PrimaryEntity>appointment</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.Compromisso.ValidacaoAreaDeRisco: Create of appointment</Description>
+      <FilteringAttributes>regardingobjectid</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica: Create of account" SdkMessageProcessingStepId="{f6898db5-d9c6-f011-bbd3-002248e0b80f}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b31f8ffd-6366-4721-8b04-287711cf9acb</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>accountid,ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica: Update of account" SdkMessageProcessingStepId="{cc6d526d-88da-f011-8543-6045bd3a08f2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.CriacaoCNAEPessoaJuridica, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b31f8ffd-6366-4721-8b04-287711cf9acb</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro: Create of account" SdkMessageProcessingStepId="{c3446174-08a9-f011-bbd2-6045bd399646}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b5bfe0e4-f273-42b8-9f43-f9fac1873a1b</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>accountid,ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro: Update of account" SdkMessageProcessingStepId="{3033a2ab-8dda-f011-8543-6045bd3a08f2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.CriacaoSociosPessoaJuridicaSerpro, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b5bfe0e4-f273-42b8-9f43-f9fac1873a1b</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_jsonserpro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao: Create of account" SdkMessageProcessingStepId="{c04aea8f-c351-f011-877b-002248de6065}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>aec49ea0-d687-46de-8031-26d7a3a8f5eb</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao: Create of account</Description>
+      <FilteringAttributes>address1_line3,address1_city</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao: Update of account" SdkMessageProcessingStepId="{7dacf7c0-c351-f011-877b-000d3ac0d920}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>aec49ea0-d687-46de-8031-26d7a3a8f5eb</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.Conta.PreencherRegionalizacao: Update of account</Description>
+      <FilteringAttributes>address1_line3,address1_city</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{4ef8e7d7-c351-f011-877b-002248de6065}</SdkMessageProcessingStepImageId>
+          <Attributes>address1_line3,address1_city</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.RemoverMascara: Create of account" SdkMessageProcessingStepId="{198470d6-5336-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>af65b839-bec9-4c55-be1d-b967be2c132f</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>address1_telephone1,telephone1,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Conta.RemoverMascara: Update of account" SdkMessageProcessingStepId="{28863af6-5336-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Conta.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>af65b839-bec9-4c55-be1d-b967be2c132f</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>address1_telephone1,telephone1,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Contato.CriacaoVinculoContato: Create of contact" SdkMessageProcessingStepId="{a5ab83b5-a41c-f111-8342-7ced8da8d97e}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Contato.CriacaoVinculoContato, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>f9494d37-da9a-498c-82bc-7c2ee64d1bb7</PluginTypeId>
+      <PrimaryEntity>contact</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_logical_id_vinculo_contato,ubh_logical_name_vinculo_contato</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Contato.RemoverMascara: Create of contact" SdkMessageProcessingStepId="{da566a09-5436-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Contato.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>799502b7-5009-46c8-8bd6-ccb8ad69213b</PluginTypeId>
+      <PrimaryEntity>contact</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>address1_telephone1,mobilephone,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Contato.RemoverMascara: Update of contact" SdkMessageProcessingStepId="{400c8922-5436-f011-8c4d-000d3a887e8d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Contato.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>799502b7-5009-46c8-8bd6-ccb8ad69213b</PluginTypeId>
+      <PrimaryEntity>contact</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>address1_telephone1,mobilephone,ubh_cnpj,ubh_cpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes: Associate of any Entity" SdkMessageProcessingStepId="{ea0aaefe-1d58-f011-bec2-000d3a887e8d}">
+      <SdkMessageId>16e7c888-3b24-448b-b7da-ebfe9b681762</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>20feee78-d139-4773-9110-69c551cdd60e</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes: Associate of any Entity</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes: Disassociate of any Entity" SdkMessageProcessingStepId="{f8278d12-2558-f011-bec2-000d3ac0d920}">
+      <SdkMessageId>bdfc191d-fc56-493a-a6b1-cb0c47a22ecc</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>20feee78-d139-4773-9110-69c551cdd60e</PluginTypeId>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <Description>UNIMEDBH.Application.Plugin.DistribuicaoVisita.ContadorQuantidadeRegioes: Disassociate of any Entity</Description>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Integracao.EnviarRequestSalutaris: Create of ubh_integracao" SdkMessageProcessingStepId="{22b1770d-ee73-f111-ab0e-00224836b0b2}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Integracao.EnviarRequestSalutaris, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>f4be4154-44d3-4909-a56b-1b7234676e5c</PluginTypeId>
+      <PrimaryEntity>ubh_integracao</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Integracao.Reprocessamento: Update of ubh_integracao" SdkMessageProcessingStepId="{8e9bc971-f26f-f111-ab0f-00224836b211}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Integracao.Reprocessamento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>67b7d9f1-9141-4fcf-9d91-1f29f27cc323</PluginTypeId>
+      <PrimaryEntity>ubh_integracao</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_integracaoid,ubh_reprocessar_integracao</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{d0dfc507-f36f-f111-ab0f-00224836b0b2}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_campos_atualizar,ubh_json,ubh_nome_processo,ubh_nome_sistema_destino,ubh_referente_a_id,ubh_referente_a_logical_name,ubh_referente_aid,ubh_retorna_valor,ubh_url_envio</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager: Update of account" SdkMessageProcessingStepId="{fe6527bf-6bc9-f011-8543-000d3a88a9e0}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>74b22c7d-a4fa-4ef0-a424-e7322bb47834</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>ownerid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="EntityImage">
+          <SdkMessageProcessingStepImageId>{3641dcec-6bc9-f011-8543-000d3a88a9e0}</SdkMessageProcessingStepImageId>
+          <Attributes>accountid,ownerid,owningbusinessunit,ubh_atribuido_por,ubh_cnpj,ubh_cpf,ubh_detalhamento_ultimo_canal_entrada,ubh_ultima_origem_registro,ubh_ultimo_canal_entrada,ubh_ultimo_detalhamento_origem</Attributes>
+          <EntityAlias>EntityImage</EntityAlias>
+          <ImageType>2</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager: Update of lead" SdkMessageProcessingStepId="{c0d045ba-59c9-f011-8544-002248e0b80f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>74b22c7d-a4fa-4ef0-a424-e7322bb47834</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>ownerid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="EntityImage">
+          <SdkMessageProcessingStepImageId>{31ab99ba-6cc9-f011-8544-6045bd3bff0c}</SdkMessageProcessingStepImageId>
+          <Attributes>leadid,ownerid,owningbusinessunit,ubh_atribuido_por,ubh_cnpj,ubh_cpf,ubh_cpf_cnpj,ubh_detalhamento_ultimo_canal_entrada,ubh_ultima_origem_registro,ubh_ultimo_canal_entrada,ubh_ultimo_detalhamento_origem</Attributes>
+          <EntityAlias>EntityImage</EntityAlias>
+          <ImageType>2</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager: Update of ubh_grupo_empresarial" SdkMessageProcessingStepId="{1b2d8213-6cc9-f011-8543-000d3a88a9e0}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogAlteracoesRegistrosManager, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>74b22c7d-a4fa-4ef0-a424-e7322bb47834</PluginTypeId>
+      <PrimaryEntity>ubh_grupo_empresarial</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>ownerid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="EntityImage">
+          <SdkMessageProcessingStepImageId>{e4881e54-6cc9-f011-8543-002248e0fd77}</SdkMessageProcessingStepImageId>
+          <Attributes>ownerid,owningbusinessunit,ubh_atribuido_por,ubh_codigo,ubh_grupo_empresarialid</Attributes>
+          <EntityAlias>EntityImage</EntityAlias>
+          <ImageType>2</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor: Assign of account" SdkMessageProcessingStepId="{a47975eb-07e8-f011-8406-000d3ac0d94f}">
+      <SdkMessageId>8cbdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>388be899-adce-4388-9bea-8f7456da4e41</PluginTypeId>
+      <PrimaryEntity>account</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor: Assign of lead" SdkMessageProcessingStepId="{e8ecd4d3-07e8-f011-8406-6045bd3a08f2}">
+      <SdkMessageId>8cbdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>388be899-adce-4388-9bea-8f7456da4e41</PluginTypeId>
+      <PrimaryEntity>lead</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor: Assign of ubh_grupo_empresarial" SdkMessageProcessingStepId="{3ab857f5-07e8-f011-8406-7ced8da8d97e}">
+      <SdkMessageId>8cbdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.LogAlteracoesRegistros.LogRegistraAtribuidoPor, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>388be899-adce-4388-9bea-8f7456da4e41</PluginTypeId>
+      <PrimaryEntity>ubh_grupo_empresarial</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento: Create of incident" SdkMessageProcessingStepId="{4cabffc8-9d23-f111-8342-6045bd3a08f2}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1ddcb509-604e-4f79-8044-2488005df974</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>incidentid,ubh_assunto_id,ubh_categoria_id,ubh_subassunto</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento: Update of incident" SdkMessageProcessingStepId="{203c63ff-9d23-f111-8342-6045bd3a08f2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.AdicionaProcessoAtentimento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1ddcb509-604e-4f79-8044-2488005df974</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_subassunto</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{119ad11d-9e23-f111-8342-6045bd3a08f2}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_assunto_id,ubh_categoria_id,ubh_processo_atendimentoid,ubh_subassunto</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.AdicionarEquipeProprietariaFilaNaOcorrencia: AddToQueue of queueitem" SdkMessageProcessingStepId="{ab0325cf-8d5e-f111-a826-6045bd3a08f2}">
+      <SdkMessageId>364af1c9-8436-4bf6-8952-82615b072380</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.AdicionarEquipeProprietariaFilaNaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>8ceb892a-91aa-49e1-b1b5-ef112521ad69</PluginTypeId>
+      <PrimaryEntity>queueitem</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.AteracaoStatusReclassificada: Update of incident" SdkMessageProcessingStepId="{3aa08e77-8b5b-f111-a825-6045bd3a08f2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.AteracaoStatusReclassificada, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>c06807ef-3472-459a-96b4-7f17333ebf95</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>statuscode</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.ConcatenacaoCamposEnvioParaArea: Update of incident" SdkMessageProcessingStepId="{dd690abb-a2ab-f111-aaac-00224836b0b2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.ConcatenacaoCamposEnvioParaArea, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>29ba235f-fcdd-4567-9408-fb899226aea2</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_criar_tarefa_area_tratativa</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{3fc9b166-adab-f111-aaac-6045bd3c308d}</SdkMessageProcessingStepImageId>
+          <Attributes>incidentid,ubh_alterar_compulsoriedade_modulos,ubh_alterar_prazo_admissao,ubh_alterar_regra_dependentes,ubh_alterarprazodevigenciamee,ubh_anexo_dnv_certidao,ubh_atendente_indicou_prestadores,ubh_atualizar_condicoes_carencia,ubh_atualizar_informacoes_adicionais,ubh_autorizacao_parecer_juridico,ubh_carteirinha_titular,ubh_cidade_atendimento,ubh_cliente_tentou_agendar,ubh_cliente_tentou_marcar_nao_conseguiu,ubh_cnpj,ubh_codigo_atual,ubh_codigo_descricao_procedimento,ubh_codigos_cid,ubh_competencia,ubh_contato_aualizado_beneficiario,ubh_cpf,ubh_criar_tarefa_area_tratativa,ubh_data_fim_compulsoriedade,ubh_data_hora_acao,ubh_data_inicio_compulsoriedade,ubh_data_nascimento,ubh_data_pagamento,ubh_data_procedimento,ubh_data_vigencia,ubh_descricao_detalhada,ubh_deve_ser_gravado,ubh_documentacao_comprobatoria,ubh_documentacao_enviada_via_fale_conosco,ubh_email_para_envio_digital,ubh_endereco_completo_local,ubh_estado_atendimento,ubh_forma_cobranca,ubh_forma_envio_solicitada,ubh_grupo_empresarial,ubh_id_contratos,ubh_identificacao_arquivo_txt,ubh_indica_solicitacao_conj_opcoes,ubh_indicacao_previa_prestadores,ubh_link_gerado_unimed_empresa,ubh_local_possui_estacionamento,ubh_marcar_impostos,ubh_meio_pagamento,ubh_modalidade_acao,ubh_modulo_afetado_opcoes,ubh_motivo_alteracoes,ubh_motivo_cancelamento_refaturamento,ubh_motivo_reducao,ubh_nome_beneficiario,ubh_nome_prestador_medico,ubh_nome_titular,ubh_nova_data_vencimento_conj_opcao,ubh_nova_descricao_grupo_empresarial,ubh_nova_razao_social,ubh_novo_cnpj,ubh_novo_codigo,ubh_novo_contingente,ubh_novo_email,ubh_novo_endereco,ubh_novo_nome_carteirinha,ubh_novo_nome_fantasia,ubh_novo_telefone_fixo,ubh_numero_autorizacao,ubh_numero_auxiliar,ubh_numero_auxiliar_contex,ubh_numero_carteirinha,ubh_numero_protocolo_autorizacao_reembolso,ubh_numero_titulo_aberto,ubh_numero_titulo_pago,ubh_outras_regularizacoes_cadastrais,ubh_parcelamento,ubh_pedido_medico,ubh_periodo_afastamento,ubh_pessoa_contato,ubh_plataforma_utilizada,ubh_possui_protocolo_mee,ubh_prestador_envolvido_contato,ubh_procedimento,ubh_processo_atendimentoid,ubh_protocolo_mee,ubh_quantidade_parcelas_desejadas_cliente,ubh_quantidade_participantes,ubh_quantidade_vidas_grupo,ubh_razao_social,ubh_rede_atendimento,ubh_responsavel_issqn,ubh_responsavel_retencoes_federais,ubh_retirar_flag_documentacao_300_vidas,ubh_senha_autorizacao,ubh_tema_acao,ubh_tipo_alteracao,ubh_tipo_demanda,ubh_tipo_solicitacao,ubh_tipo_titulo,ubh_titulo_nota_fiscal,ubh_utilizacao_sera_avaliada,ubh_vai_alterar_cnpj_pagador,ubh_valor_cobranca,ubh_valor_original_titulo,ubh_valor_pago</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta: Create of incident" SdkMessageProcessingStepId="{ed541e6f-f0a6-f111-aaad-6045bd3c308d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>99d68192-c2d8-4d7e-b23b-395578dd56a5</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_fechamento_ocorrencia,ubh_ticket_registro</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta: Update of incident" SdkMessageProcessingStepId="{d0949d7b-0023-f111-8341-7ced8da8d97e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.ConclusaoOcorrenciaFechamentoAtividadesAberta, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>99d68192-c2d8-4d7e-b23b-395578dd56a5</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_fechamento_ocorrencia</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.CriacaoProtocoloIntegracao: Create of incident" SdkMessageProcessingStepId="{4c007818-f26f-f111-ab0f-6045bd3c308d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.CriacaoProtocoloIntegracao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>3b059810-83f0-4988-966f-9558e8fb9a48</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>incidentid,ubh_interlocutor_id</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente: Create of incident" SdkMessageProcessingStepId="{48d40de6-c82d-f111-88b4-6045bd3a08f2}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1c64e364-2b12-4a9c-afd2-1b0ccb66ee22</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_encaminhar_outra_area</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente: Update of incident" SdkMessageProcessingStepId="{71786af8-c82d-f111-88b4-7ced8da8d97e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.FinalizarOcorrenciaAutomaticamente, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1c64e364-2b12-4a9c-afd2-1b0ccb66ee22</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_encaminhar_outra_area</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{4e616464-ce2d-f111-88b4-7ced8da8d97e}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_encaminhar_outra_area,ubh_processo_atendimentoid</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.IntegracaoEmTratamento: Update of incident" SdkMessageProcessingStepId="{04248f53-6b71-f111-ab0f-6045bd3c308d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.IntegracaoEmTratamento, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>65dc1109-b108-47b0-b5eb-047c1c602b8c</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>statuscode</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{ce68ec95-6b71-f111-ab0f-6045bd3c308d}</SdkMessageProcessingStepImageId>
+          <Attributes>createdon,incidentid,statuscode,ubh_descricao_solicitacao_cliente,ubh_interlocutor_id,ubh_protocolo,ubh_responsavel_atual</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia: Create of incident" SdkMessageProcessingStepId="{4bf522be-4fad-f111-aaac-002248df36f9}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>c804cda3-03f4-4d6e-9e34-e4e7b4136a9f</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia: Update of incident" SdkMessageProcessingStepId="{5d7fbf1c-73ad-f111-aaac-6045bd3c308d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.PreencherContratoOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>c804cda3-03f4-4d6e-9e34-e4e7b4136a9f</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>customerid,ubh_conta_generica,ubh_grupo_empresarialid,ubh_perfil</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{e841320d-74ad-f111-aaac-002248df36f9}</SdkMessageProcessingStepImageId>
+          <Attributes>customerid,ubh_conta_generica,ubh_grupo_empresarialid,ubh_perfil</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.ReaberturaOcorrencia: Update of incident" SdkMessageProcessingStepId="{e90278ba-eb2d-f111-88b4-7ced8da8d97e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.ReaberturaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>97897f46-b224-4b01-8b50-7416ab3eea73</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_reaberto</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PosImage">
+          <SdkMessageProcessingStepImageId>{b9e2ddd3-eb2d-f111-88b4-000d3ac0d94f}</SdkMessageProcessingStepImageId>
+          <Attributes>ownerid,ubh_data_conclusao,ubh_reaberto,ubh_responsavel_atual</Attributes>
+          <EntityAlias>PosImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara: Create of incident" SdkMessageProcessingStepId="{5eab2f3e-f25d-f111-a826-6045bd3a08f2}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>294b8d9a-d890-4a78-a1ff-2059e86cfb0b</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara: Update of incident" SdkMessageProcessingStepId="{69207783-f25d-f111-a826-000d3ac0d94f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>294b8d9a-d890-4a78-a1ff-2059e86cfb0b</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Ocorrencia.RoteamentoOcorrencia: Update of incident" SdkMessageProcessingStepId="{7922352c-f29b-f111-b8dc-00224836b0b2}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Ocorrencia.RoteamentoOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>e1034847-ff71-432d-af52-2f9e72eccf4a</PluginTypeId>
+      <PrimaryEntity>incident</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_processo_atendimentoid</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>2</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{93857e39-019c-f111-b8dc-002248df36f9}</SdkMessageProcessingStepImageId>
+          <Attributes>ownerid,statuscode,ubh_grupo_empresarialid,ubh_processo_atendimentoid,ubh_responsavel_atual</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa: Create of opportunity" SdkMessageProcessingStepId="{1b74ee5f-5ad4-f011-8544-6045bd3bff0c}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>66d1dcbb-1ccb-4d7b-a89f-1dc8fe448fee</PluginTypeId>
+      <PrimaryEntity>opportunity</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>opportunityid,ubh_estagio_bpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa: Update of opportunity" SdkMessageProcessingStepId="{52161784-5ad4-f011-8544-6045bd3bff0c}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapa, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>66d1dcbb-1ccb-4d7b-a89f-1dc8fe448fee</PluginTypeId>
+      <PrimaryEntity>opportunity</PrimaryEntity>
+      <AsyncAutoDelete>1</AsyncAutoDelete>
+      <FilteringAttributes>ubh_estagio_bpf</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{980f1d99-5ad4-f011-8544-002248e0b80f}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_estagio_bpf</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapaPerdido: SetStateDynamicEntity of opportunity" SdkMessageProcessingStepId="{a3bce1a3-5dd4-f011-8544-002248e0b80f}">
+      <SdkMessageId>1dbebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Oportunidade.MonitoramentoTempoEtapaPerdido, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>3a90cca5-a14c-4108-a219-9c524744f563</PluginTypeId>
+      <PrimaryEntity>opportunity</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes></FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.Oportunidade.RelacioneOppClientePotencial: Create of opportunity" SdkMessageProcessingStepId="{786a245b-3db8-f111-aaae-00224836b0b2}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.Oportunidade.RelacioneOppClientePotencial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>b53f0958-41b4-4b3e-a8fc-460e2cf584b4</PluginTypeId>
+      <PrimaryEntity>opportunity</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>customerid</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao: Create of ubh_oportunidade_produto" SdkMessageProcessingStepId="{c7b634aa-6adb-f011-8543-000d3ac0d94f}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1835b329-c750-4473-a82e-98d7df5d4f0b</PluginTypeId>
+      <PrimaryEntity>ubh_oportunidade_produto</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_id_oportunidade,ubh_integracao,ubh_oportunidade_produtoid</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao: Update of ubh_oportunidade_produto" SdkMessageProcessingStepId="{0dc1ddc8-6adb-f011-8543-7ced8da8d97e}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.OportunidadeProduto.BloqueiaCriacaoAtualizacaoOriundoOppIntegracao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>1835b329-c750-4473-a82e-98d7df5d4f0b</PluginTypeId>
+      <PrimaryEntity>ubh_oportunidade_produto</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>statecode,statuscode,ubh_id_oportunidade,ubh_id_produto,ubh_id_referencia_externa_produto,ubh_id_referencia_externa_proposta,ubh_integracao,ubh_name,ubh_oportunidade_produtoid</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{cba0d998-6edb-f011-8543-000d3ac0d94f}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_id_oportunidade</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia: Create of slakpiinstance" SdkMessageProcessingStepId="{35bd7eab-bd68-f111-ab0c-00224836b211}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>466c1689-0203-4f7c-bbc1-39772ea0a8b9</PluginTypeId>
+      <PrimaryEntity>slakpiinstance</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>regarding</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia: Update of slakpiinstance" SdkMessageProcessingStepId="{2a9f6cd3-bd68-f111-ab0c-6045bd3c308d}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.SlaKpiInstance.SLAAtualizaCamposNaOcorrencia, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>466c1689-0203-4f7c-bbc1-39772ea0a8b9</PluginTypeId>
+      <PrimaryEntity>slakpiinstance</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>computedfailuretime,status</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>1</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>40</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PostImage">
+          <SdkMessageProcessingStepImageId>{55009524-be68-f111-ab0c-00224836b0b2}</SdkMessageProcessingStepImageId>
+          <Attributes>computedfailuretime,name,regarding,status</Attributes>
+          <EntityAlias>PostImage</EntityAlias>
+          <ImageType>1</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.SolicitacaoCadastro.RemoverMascara: Create of ubh_solicitacao_cadastro" SdkMessageProcessingStepId="{40462d96-3bbb-f111-aaaf-6045bd3c308d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.SolicitacaoCadastro.RemoverMascara, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>206e9a7f-8ebb-400c-a9c3-e6cfe7bbe8b7</PluginTypeId>
+      <PrimaryEntity>ubh_solicitacao_cadastro</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_cnpj,ubh_cpf,ubh_telefone_adicional,ubh_telefone_principal</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.TarefaAtendimento.SalvarUltimoStatusAntesConclusao: Update of ubh_tarefa_atendimento" SdkMessageProcessingStepId="{16eb39af-e331-f111-88b4-000d3ac0d94f}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.TarefaAtendimento.SalvarUltimoStatusAntesConclusao, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>7367a117-ff57-416f-be14-123932dfb41d</PluginTypeId>
+      <PrimaryEntity>ubh_tarefa_atendimento</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>statecode,statuscode</FilteringAttributes>
+      <InvocationSource>1</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>20</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{231247cd-e331-f111-88b4-000d3ac0d94f}</SdkMessageProcessingStepImageId>
+          <Attributes>statuscode</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial: Create of ubh_vinculo_conta" SdkMessageProcessingStepId="{0a8a8ce1-9482-f011-b4cc-000d3ac0d920}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>eca30409-d529-4aa6-8c87-08271087d07f</PluginTypeId>
+      <PrimaryEntity>ubh_vinculo_conta</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_conta,ubh_grupoempresarial</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial: Update of ubh_vinculo_conta" SdkMessageProcessingStepId="{8f57abf9-9482-f011-b4cc-000d3ac0d920}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.VinculoConta.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>eca30409-d529-4aa6-8c87-08271087d07f</PluginTypeId>
+      <PrimaryEntity>ubh_vinculo_conta</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_conta,ubh_grupoempresarial</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{c2a1170c-9582-f011-b4cc-000d3ac0d920}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_conta,ubh_grupoempresarial</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial: Create of ubh_vinculo_contato" SdkMessageProcessingStepId="{d5997682-8c82-f011-b4cc-000d3a887e8d}">
+      <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>6dd4ca14-83e6-4c3d-9e14-2335c578134f</PluginTypeId>
+      <PrimaryEntity>ubh_vinculo_contato</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_contato,ubh_grupo_empresarial</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages />
+    </SdkMessageProcessingStep>
+    <SdkMessageProcessingStep Name="UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial: Update of ubh_vinculo_contato" SdkMessageProcessingStepId="{ec07b09b-8d82-f011-b4cc-000d3ac0d920}">
+      <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+      <PluginTypeName>UNIMEDBH.Application.Plugin.VinculoContato.BloquearDuplicidadeGrupoEmpresarial, UNIMEDBH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1a5a521ccd56624f</PluginTypeName>
+      <PluginTypeId>6dd4ca14-83e6-4c3d-9e14-2335c578134f</PluginTypeId>
+      <PrimaryEntity>ubh_vinculo_contato</PrimaryEntity>
+      <AsyncAutoDelete>0</AsyncAutoDelete>
+      <FilteringAttributes>ubh_contato,ubh_grupo_empresarial</FilteringAttributes>
+      <InvocationSource>0</InvocationSource>
+      <Mode>0</Mode>
+      <Rank>1</Rank>
+      <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+      <Stage>10</Stage>
+      <IsCustomizable>1</IsCustomizable>
+      <IsHidden>0</IsHidden>
+      <SupportedDeployment>0</SupportedDeployment>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <SdkMessageProcessingStepImages>
+        <SdkMessageProcessingStepImage Name="PreImage">
+          <SdkMessageProcessingStepImageId>{7ff1935e-8e82-f011-b4cc-000d3a887e8d}</SdkMessageProcessingStepImageId>
+          <Attributes>ubh_contato,ubh_grupo_empresarial</Attributes>
+          <EntityAlias>PreImage</EntityAlias>
+          <ImageType>0</ImageType>
+          <MessagePropertyName>Target</MessagePropertyName>
+          <IsCustomizable>1</IsCustomizable>
+        </SdkMessageProcessingStepImage>
+      </SdkMessageProcessingStepImages>
+    </SdkMessageProcessingStep>
+  </SdkMessageProcessingSteps>
+  <EntityDataProviders />
+  <Languages>
+    <Language>1046</Language>
+  </Languages>
+</ImportExportXml>

@@ -1,0 +1,3749 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26092.142" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.26092.00142">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="UNIMEDBH - Cliente Potencial até Oportunidade" OriginalName="UNIMEDBH - Cliente Potencial até Oportunidade">ubh_cliente_potencial_oportunidade</Name>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+    <Entity>
+      <Name LocalizedName="UNIMEDBH - Fluxo Oportunidade" OriginalName="UNIMEDBH - Fluxo Oportunidade">ubh_unimedbh_fluxo_oportunidade</Name>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{7eac8703-7a1f-f011-998a-002248de6065}" Name="UNIMEDBH - Bloquear Reativação Ata assinada">
+      <XamlFileName>/Workflows/UNIMEDBH-BloquearReativaoAtaassinada-7EAC8703-7A1F-F011-998A-002248DE6065.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>20</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Bloquear Reativação Ata assinada" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{f0a44112-ebf2-4ca8-9057-96dd8fcb3d0f}">
+          <label languagecode="1046" description="Não é permitido reativar esse registro!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{e4900d52-0831-f011-8c4e-002248de6065}" Name="UNIMEDBH - Ata -(Online) Gerar documento e enviar e-mail com anexo Docsing">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-OnlineGerardocumentoeenviare-mailcoma-E4900D52-0831-F011-8C4E-002248DE6065.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata -(Online) Gerar documento e enviar e-mail com anexo Docsing" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{90659cf7-8335-f011-8c4d-000d3a887e8d}" Name="UNIMEDBH - Agendamento - Notificação por e-mail">
+      <JsonFileName>/Workflows/UNIMEDBH-Agendamento-Notificaopore-mail-90659CF7-8335-F011-8C4D-000D3A887E8D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Agendamento - Notificação por e-mail" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{73fdf61d-b831-f011-8c4d-000d3a887e8d}" Name="UNIMEDBH -  Ata-(Online) Monitora envelope documeneto via Docsing">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-OnlineMonitoraenvelopedocumenetoviaDo-73FDF61D-B831-F011-8C4D-000D3A887E8D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH -  Ata-(Online) Monitora envelope documeneto via Docsing" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{075e5918-2eb8-4920-a346-bc264d85f29a}" Name="UNIMEDBH - Agendamento - Bloqueio da crianção quando o campo Agenda Indisponivel">
+      <XamlFileName>/Workflows/UNIMEDBH-Agendamento-BloqueiodacrianoquandoocampoA-075E5918-2EB8-4920-A346-BC264D85F29A.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Appointment</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Agendamento - Bloqueio da crianção quando o campo Agenda Indisponivel" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{5d088246-e574-4c16-8c7e-b959c431088c}">
+          <label languagecode="1046" description="Esse registro não pode ser cadastrado, pois o Horário selecionada esta fora da escala de trabalho do consultor!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{d7840716-0a7e-486d-b606-668c30e70ef9}" Name="UNIMEDBH - Cliente Potencial - Criação de Telefonema para Origem Call Center">
+      <XamlFileName>/Workflows/UNIMEDBH-ClientePotencial-CriaodeTelefonemaparaOri-D7840716-0A7E-486D-B606-668C30E70EF9.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_origem_registro</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Cliente Potencial - Criação de Telefonema para Origem Call Center" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{aa09d9ae-c251-4298-95ff-0d2c6e381914}" Name="UNIMEDBH - Oportunidade - Analise Cadastral">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-AnaliseCadastral-AA09D9AE-C251-4298-95FF-0D2C6E381914.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Analise Cadastral" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{1cb32c64-ac05-4445-8aea-62d93ed41fa9}">
+          <label languagecode="1046" description="Não é possível seguir sem confirmar a Analise Cadastral. Aprove a Analise Cadastral para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{70fe2e2c-106a-4f55-a54a-134ab52d2575}" Name="UNIMEDBH - Oportunidade - Confecção e Assinatura de Documento">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-ConfecoeAssinaturadeDocument-70FE2E2C-106A-4F55-A54A-134AB52D2575.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Confecção e Assinatura de Documento" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{26e9cc6f-f4e0-49b0-b08b-c15fb84eaca0}">
+          <label languagecode="1046" description="Não é possível seguir sem confirmar a Confecção e Assinatura de Documento. Aprove a Confecção e Assinatura de Documento para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{da3d7169-6274-46c8-a7ff-bbb7517723a2}" Name="UNIMEDBH - Oportunidade - CPT">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-CPT-DA3D7169-6274-46C8-A7FF-BBB7517723A2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - CPT" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{dcafbac9-c4b7-4ff3-a7d8-76ec87cbc8b2}">
+          <label languagecode="1046" description="Não é possível seguir sem confirmar a Analise CPT. Aprove a Analise CPT para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{d5d1052e-a5eb-49c1-9031-bbce8489252a}" Name="UNIMEDBH - Oportunidade - Triagem Médica">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-TriagemMdica-D5D1052E-A5EB-49C1-9031-BBCE8489252A.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Triagem Médica" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{b65cd340-b12e-4535-ac4f-8e160684fd65}">
+          <label languagecode="1046" description="Não é possível seguir sem confirmar a Triagem Médica. Aprove a Triagem Médica para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{3664d8d9-249e-4a43-b8ce-b5f3a6833abb}" Name="UNIMEDBH - Agendamento - Alteração Status Agendado">
+      <XamlFileName>/Workflows/UNIMEDBH-Agendamento-AlteraoStatusAgendado-3664D8D9-249E-4A43-B8CE-B5F3A6833ABB.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Appointment</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Agendamento - Alteração Status Agendado" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{afe69f13-b240-4976-87fc-303be767b8c1}" Name="UNIMEDBH - Fluxo Oportunidade">
+      <XamlFileName>/Workflows/UNIMEDBH-FluxoOportunidade-AFE69F13-B240-4976-87FC-303BE767B8C1.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>4</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <processorder>0</processorder>
+      <RunAs>1</RunAs>
+      <UniqueName>ubh_unimedbh_fluxo_oportunidade</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>1</ProcessTriggerScope>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Fluxo Oportunidade" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{8fc0db55-b621-4d79-b0c4-f18d1f5f116c}">
+          <label languagecode="1046" description="Elaboração De Proposta" />
+        </steplabels>
+        <steplabels id="{2eb86a5d-9e84-441d-a47a-6f0b74e0b1da}">
+          <label languagecode="1046" description="Elaboração de Proposta Realizada?" />
+        </steplabels>
+        <steplabels id="{ffbc9618-1a5d-4485-a53b-ac3ea8d6dfa2}">
+          <label languagecode="1046" description="Confecção E Assinatura De Documento" />
+        </steplabels>
+        <steplabels id="{692ec949-eadb-4ddb-8777-6af940cfd065}">
+          <label languagecode="1046" description="Confecção e Assinatura de Documento Realizada?" />
+        </steplabels>
+        <steplabels id="{10c73b5f-529a-45cf-a34b-54711f38f769}">
+          <label languagecode="1046" description="Análise Cadastral" />
+        </steplabels>
+        <steplabels id="{eed0816e-1311-4905-97ca-93b5069da279}">
+          <label languagecode="1046" description="Analise Cadastral Realizada?" />
+        </steplabels>
+        <steplabels id="{b4bcbb3f-944b-4405-b66f-dd5a3f1f5cd6}">
+          <label languagecode="1046" description="Triagem Médica" />
+        </steplabels>
+        <steplabels id="{1a607652-df4b-4b48-ace3-82f744bf5c3e}">
+          <label languagecode="1046" description="Triagem Médica" />
+        </steplabels>
+        <steplabels id="{c8cadd8c-3a80-40dc-abfc-1fc073a89615}">
+          <label languagecode="1046" description="CPT" />
+        </steplabels>
+        <steplabels id="{3d71e096-65d8-464e-aa30-dfa3b970453f}">
+          <label languagecode="1046" description="Análise CPT Realizada?" />
+        </steplabels>
+        <steplabels id="{38511ae4-9a93-47ec-8324-9b8d9020e74a}">
+          <label languagecode="1046" description="Encerrado" />
+        </steplabels>
+        <steplabels id="{ee1f9dfc-0093-41bd-9a0e-ff7795ee6bdb}">
+          <label languagecode="1046" description="Anotações" />
+        </steplabels>
+      </labels>
+      <ProcessTriggers>
+        <ProcessTrigger processtriggerid="{69b894c0-adcf-f011-8543-00224837aeef}">
+          <methodid>{7ed4324f-e110-4661-9939-5fc160752fbe}</methodid>
+          <scope>1</scope>
+          <controlname>8fc0db55-b621-4d79-b0c4-f18d1f5f116c</controlname>
+          <event>STAGEEXIT</event>
+          <pipelinestage>20</pipelinestage>
+          <iscustomizable>1</iscustomizable>
+          <primaryentitytypecode>Opportunity</primaryentitytypecode>
+        </ProcessTrigger>
+        <ProcessTrigger processtriggerid="{6cb894c0-adcf-f011-8543-00224837aeef}">
+          <methodid>{70fe2e2c-106a-4f55-a54a-134ab52d2575}</methodid>
+          <scope>1</scope>
+          <controlname>ffbc9618-1a5d-4485-a53b-ac3ea8d6dfa2</controlname>
+          <event>STAGEEXIT</event>
+          <pipelinestage>20</pipelinestage>
+          <iscustomizable>1</iscustomizable>
+          <primaryentitytypecode>Opportunity</primaryentitytypecode>
+        </ProcessTrigger>
+        <ProcessTrigger processtriggerid="{70b894c0-adcf-f011-8543-00224837aeef}">
+          <methodid>{aa09d9ae-c251-4298-95ff-0d2c6e381914}</methodid>
+          <scope>1</scope>
+          <controlname>10c73b5f-529a-45cf-a34b-54711f38f769</controlname>
+          <event>STAGEEXIT</event>
+          <pipelinestage>20</pipelinestage>
+          <iscustomizable>1</iscustomizable>
+          <primaryentitytypecode>Opportunity</primaryentitytypecode>
+        </ProcessTrigger>
+        <ProcessTrigger processtriggerid="{71b894c0-adcf-f011-8543-00224837aeef}">
+          <methodid>{d5d1052e-a5eb-49c1-9031-bbce8489252a}</methodid>
+          <scope>1</scope>
+          <controlname>b4bcbb3f-944b-4405-b66f-dd5a3f1f5cd6</controlname>
+          <event>STAGEEXIT</event>
+          <pipelinestage>20</pipelinestage>
+          <iscustomizable>1</iscustomizable>
+          <primaryentitytypecode>Opportunity</primaryentitytypecode>
+        </ProcessTrigger>
+        <ProcessTrigger processtriggerid="{73b894c0-adcf-f011-8543-00224837aeef}">
+          <methodid>{da3d7169-6274-46c8-a7ff-bbb7517723a2}</methodid>
+          <scope>1</scope>
+          <controlname>c8cadd8c-3a80-40dc-abfc-1fc073a89615</controlname>
+          <event>STAGEEXIT</event>
+          <pipelinestage>20</pipelinestage>
+          <iscustomizable>1</iscustomizable>
+          <primaryentitytypecode>Opportunity</primaryentitytypecode>
+        </ProcessTrigger>
+      </ProcessTriggers>
+    </Workflow>
+    <Workflow WorkflowId="{8ea44266-7f34-4b20-8e99-5423f5d9035c}" Name="UNIMEDBH - Buscar Membros Regionalizacao Promotores">
+      <XamlFileName>/Workflows/UNIMEDBH-BuscarMembrosRegionalizacaoPromotores-8EA44266-7F34-4B20-8E99-5423F5D9035C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{c2d4caa8-6462-f011-bec2-000d3ac0d920}</SdkMessageId>
+      <UniqueName>BuscarMembrosRegionalizacaoPromotores</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.42</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Buscar Membros Regionalizacao Promotores" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{7577b2a7-716d-f011-b4cc-000d3ac0d920}" Name="UNIMEDBH - ATA - Preenche Data Término / Conclusão / Cancelada">
+      <XamlFileName>/Workflows/UNIMEDBH-ATA-PreencheDataTrminoConclusoCancelada-7577B2A7-716D-F011-B4CC-000D3AC0D920.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statuscode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.46</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - ATA - Preenche Data Término / Conclusão / Cancelada" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{7a8c0ca1-326e-f011-b4cc-000d3ac0d920}" Name="UNIMEDBH - Ata-(Online) Cancelamento de Envelope">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-OnlineCancelamentodeEnvelope-7A8C0CA1-326E-F011-B4CC-000D3AC0D920.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.46</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata-(Online) Cancelamento de Envelope" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{ec151e55-ec72-f011-bec2-000d3ac0d920}" Name="UNIMEDBH - Ata - Limpar Erro de Envelope">
+      <XamlFileName>/Workflows/UNIMEDBH-Ata-LimparErrodeEnvelope-EC151E55-EC72-F011-BEC2-000D3AC0D920.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_status_envelope</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.47</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Limpar Erro de Envelope" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{49305b8e-607c-f011-b4cc-000d3a887e8d}" Name="UNIMEDBH - Ata-(Online) Re-envio de Envelope">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-OnlineRe-enviodeEnvelope-49305B8E-607C-F011-B4CC-000D3A887E8D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.8.14.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata-(Online) Re-envio de Envelope" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9d97b31a-706d-f011-b4cc-000d3ac0d920}" Name="UNIMEDBH - Ata - Preenche Data Inicio">
+      <XamlFileName>/Workflows/UNIMEDBH-Ata-PreencheDataInicio-9D97B31A-706D-F011-B4CC-000D3AC0D920.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.46</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Preenche Data Inicio" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{40a613bd-d22d-f011-8c4d-000d3a887e8d}" Name="UNIMEDBH - Bloquear Ata sem assinatura">
+      <XamlFileName>/Workflows/UNIMEDBH-BloquearAtasemassinatura-40A613BD-D22D-F011-8C4D-000D3A887E8D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_ata</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Bloquear Ata sem assinatura" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{5f443e1e-92c7-4ef5-9450-eef02f36d6f6}">
+          <label languagecode="1046" description="Ata não pode ser finalizada, pois o cliente ainda não assinou a Ata!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{eb17510b-d38c-f011-b4cc-6045bd3844ac}" Name="UNIMEDBH - BeneficiarioProduto - Preenche Nome">
+      <XamlFileName>/Workflows/UNIMEDBH-BeneficiarioProduto-PreencheNome-EB17510B-D38C-F011-B4CC-6045BD3844AC.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.9.8.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_beneficiarioproduto</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - BeneficiarioProduto - Preenche Nome" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{2e9bc7f3-aa8d-f011-b4cc-6045bd3844ac}" Name="UNIMEDBH - ContratoProduto - Preenche Nome">
+      <XamlFileName>/Workflows/UNIMEDBH-ContratoProduto-PreencheNome-2E9BC7F3-AA8D-F011-B4CC-6045BD3844AC.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.9.9.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_contrato_produto</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - ContratoProduto - Preenche Nome" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{6599d752-5c1c-f011-998a-000d3ac0d920}" Name="UNIMEDBH - Ata -(Finalizada) Gerar documento(Presencial) e enviar e-mail com anexo">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-FinalizadaGerardocumentoPresencialeen-6599D752-5C1C-F011-998A-000D3AC0D920.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata -(Finalizada) Gerar documento(Presencial) e enviar e-mail com anexo" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d022a0c0-3b99-f011-b41b-002248deb25e}" Name="UNIMEDBH - Lead - Enviar pesquisa CSAT para Lead Desqualificado" Description="Fluxo de envio de pesquisa CSAT - Quando o lead for desqualificado e tiver Motivo Não Fechamento diferente de:&#xA;- Interesse não comercial (currículo/consulta/outros)&#xA;- Não Atende/Caixa Postal/Não responde Whatsapp ou Email&#xA;- Fora da área de atuação&#xA;será enviada pesquisa CSAT ao lead.">
+      <JsonFileName>/Workflows/UNIMEDBH-Lead-EnviarpesquisaCSATparaLeadDesqualifi-D022A0C0-3B99-F011-B41B-002248DEB25E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Enviar pesquisa CSAT para Lead Desqualificado" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1046" description="Fluxo de envio de pesquisa CSAT - Quando o lead for desqualificado e tiver Motivo Não Fechamento diferente de:&#xA;- Interesse não comercial (currículo/consulta/outros)&#xA;- Não Atende/Caixa Postal/Não responde Whatsapp ou Email&#xA;- Fora da área de atuação&#xA;será enviada pesquisa CSAT ao lead." />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{5bda236e-d69a-f011-b41b-6045bd3bff0c}" Name="UNIMEDBH - API SERPRO PESSOA JURIDICA">
+      <XamlFileName>/Workflows/UNIMEDBH-APISERPROPESSOAJURIDICA-5BDA236E-D69A-F011-B41B-6045BD3BFF0C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{5fda236e-d69a-f011-b41b-6045bd3bff0c}</SdkMessageId>
+      <UniqueName>UNIMEDBHAPISERPROPESSOAJURIDICA</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.9.26.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - API SERPRO PESSOA JURIDICA" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{8da4b4e3-9aa3-f011-bbd3-6045bd3bff0c}" Name="UNIMEDBH - API SERPRO PESSOA FISICA">
+      <XamlFileName>/Workflows/UNIMEDBH-APISERPROPESSOAFISICA-8DA4B4E3-9AA3-F011-BBD3-6045BD3BFF0C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{91a4b4e3-9aa3-f011-bbd3-6045bd3bff0c}</SdkMessageId>
+      <UniqueName>UNIMEDBHAPISERPROPESSOAFISICA</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.10.3.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - API SERPRO PESSOA FISICA" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{e3ac5bec-8ffc-4c7d-bc19-34f8565ed07f}" Name="UNIMEDBH - Preenche Nome Empresa">
+      <XamlFileName>/Workflows/UNIMEDBH-PreencheNomeEmpresa-E3AC5BEC-8FFC-4C7D-BC19-34F8565ED07F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>lastname,firstname,fullname</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.40</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Preenche Nome Empresa" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{cf22a0c0-3b99-f011-b41b-002248deb25e}" Name="UNIMEDBH - Ata - Enviar pesquisa CSAT aos participantes da Ata" Description="Fluxo de envio de pesquisa CSAT - Quando uma ata é finalizada (assinada), enviará pesquisa CSAT aos participantes">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-EnviarpesquisaCSATaosparticipantesdaA-CF22A0C0-3B99-F011-B41B-002248DEB25E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Enviar pesquisa CSAT aos participantes da Ata" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1046" description="Fluxo de envio de pesquisa CSAT - Quando uma ata é finalizada (assinada), enviará pesquisa CSAT aos participantes" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{7ed4324f-e110-4661-9939-5fc160752fbe}" Name="UNIMEDBH - Oportunidade - Elaboração de Proposta">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-ElaboraodeProposta-7ED4324F-E110-4661-9939-5FC160752FBE.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.5</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Elaboração de Proposta" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{38ad2615-eeb7-45ac-9845-851cdf7fe8dc}">
+          <label languagecode="1046" description="Não é possível seguir sem confirmar a Elaboração de Proposta. Aprove a Elaboração de Proposta para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{954bc5ab-9940-f011-877a-002248de6065}" Name="UNIMEDBH - Atribui Agendamento e Cliente Pontecial">
+      <XamlFileName>/Workflows/UNIMEDBH-AtribuiAgendamentoeClientePontecial-954BC5AB-9940-F011-877A-002248DE6065.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.27</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Appointment</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Atribui Agendamento e Cliente Pontecial" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{551e12ef-09bb-f011-bbd3-002248e0b80f}" Name="UNIMEDBH - Agendamento - Preenche Canal Usuário">
+      <XamlFileName>/Workflows/UNIMEDBH-Agendamento-PreencheCanalUsurio-551E12EF-09BB-F011-BBD3-002248E0B80F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.11.6.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Appointment</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Agendamento - Preenche Canal Usuário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{2f8001fd-cebb-f011-bbd3-002248deb25e}" Name="UNIMEDBH - Ata - Enviar E-mail para Cliente Ausente">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-EnviarE-mailparaClienteAusente-2F8001FD-CEBB-F011-BBD3-002248DEB25E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Enviar E-mail para Cliente Ausente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{1826eee1-7ec4-f011-bbd3-6045bd3bff0c}" Name="UNIMEDBH - Lead - Controle de Comunicação">
+      <XamlFileName>/Workflows/UNIMEDBH-Lead-ControledeComunicao-1826EEE1-7EC4-F011-BBD3-6045BD3BFF0C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.11.18.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Controle de Comunicação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{adccb1ef-86c4-f011-bbd2-002248d31a87}" Name="UNIMEDBH - Conta - Controle de Comunicação">
+      <XamlFileName>/Workflows/UNIMEDBH-Conta-ControledeComunicao-ADCCB1EF-86C4-F011-BBD2-002248D31A87.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.11.18.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Account</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Controle de Comunicação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{12c683cd-88c4-f011-bbd2-002248373380}" Name="UNIMEDBH - Contato - Controle de Comunicação">
+      <XamlFileName>/Workflows/UNIMEDBH-Contato-ControledeComunicao-12C683CD-88C4-F011-BBD2-002248373380.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.11.18.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Contact</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Contato - Controle de Comunicação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{872cf922-2584-4558-af65-9289fb75ec35}" Name="UNIMEDBH - BPF - Registro de Etapas do BPF">
+      <XamlFileName>/Workflows/UNIMEDBH-BPF-RegistrodeEtapasdoBPF-872CF922-2584-4558-AF65-9289FB75EC35.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnUpdateAttributeList>activestageid</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.23</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_cliente_potencial_oportunidade</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - BPF - Registro de Etapas do BPF" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{80d5d9bc-74cf-f011-8544-002248e0b80f}" Name="UNIMEDBH-BUSCAR DADOS POR CPF CNPJ">
+      <XamlFileName>/Workflows/UNIMEDBH-BUSCARDADOSPORCPFCNPJ-80D5D9BC-74CF-F011-8544-002248E0B80F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{8ad5d9bc-74cf-f011-8544-002248e0b80f}</SdkMessageId>
+      <UniqueName>UNIMEDBH_BUSCAR_DADOS_POR_CPF_CNPJ</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.12.2.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH-BUSCAR DADOS POR CPF CNPJ" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{662b9e35-65ea-f011-8406-6045bd3a08f2}" Name="UNIMEDBH - Grupo Empresarial - Conclusão Ata">
+      <JsonFileName>/Workflows/UNIMEDBH-GrupoEmpresarial-ConclusoAta-662B9E35-65EA-F011-8406-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.1.5.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Grupo Empresarial - Conclusão Ata" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{77b66354-9761-f011-bec2-002248de6065}" Name="UNIMEDBH - Desqualificação do Lead">
+      <XamlFileName>/Workflows/UNIMEDBH-DesqualificaodoLead-77B66354-9761-F011-BEC2-002248DE6065.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_status_desqualificacao_lead</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.42</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Desqualificação do Lead" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{01ce6d65-ba24-40c5-97bc-7094d8de2bb1}" Name="UNIMEDBH - LEAD - Regra Negócio Lead Perdido">
+      <XamlFileName>/Workflows/UNIMEDBH-LEAD-RegraNegcioLeadPerdido-01CE6D65-BA24-40C5-97BC-7094D8DE2BB1.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode,statuscode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - LEAD - Regra Negócio Lead Perdido" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{a2f45ace-680f-4378-b2a8-53dbb2e67cd6}">
+          <label languagecode="1046" description="Favor preencher o Motivo de Não Fechamento" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{8c42e57c-9046-48e0-8ad9-b5f2bf55ce31}" Name="UNIMEDBH - Buscar Membro Regionalizacao Calandario">
+      <XamlFileName>/Workflows/UNIMEDBH-BuscarMembroRegionalizacaoCalandario-8C42E57C-9046-48E0-8AD9-B5F2BF55CE31.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{310f3271-5c33-f011-8c4e-002248de6065}</SdkMessageId>
+      <UniqueName>BuscarMembroRegionalizacaoCalandario</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Buscar Membro Regionalizacao Calandario" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{10346213-8f06-f111-8407-7ced8da8d97e}" Name="UNIMEDBH - Ata - (Finalizada) Gerar documento (Sem assinatura do cliente) e enviar e-mail">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-FinalizadaGerardocumentoSemassinatura-10346213-8F06-F111-8407-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.2.10.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - (Finalizada) Gerar documento (Sem assinatura do cliente) e enviar e-mail" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{e8dec370-40db-f011-8543-000d3ac0d94f}" Name="UNIMEDBH - Lead - Definição da Razão de Status">
+      <XamlFileName>/Workflows/UNIMEDBH-Lead-DefiniodaRazodeStatus-E8DEC370-40DB-F011-8543-000D3AC0D94F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_data_atendimento</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.12.17.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Definição da Razão de Status" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{5499a031-d023-f111-8342-000d3ac0d94f}" Name="UNIMEDBH - Ocorrência - Fluxo de atualização de Data de Conclusão">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-FluxodeatualizaodeDatadeConclus-5499A031-D023-F111-8342-000D3AC0D94F.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.19.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Fluxo de atualização de Data de Conclusão" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{7ca91608-3972-4016-90e3-b4826de6391c}" Name="UNIMEDBH - BPF - Bloqueio de retrocesso de etapas do BPF">
+      <XamlFileName>/Workflows/UNIMEDBH-BPF-BloqueioderetrocessodeetapasdoBPF-7CA91608-3972-4016-90E3-B4826DE6391C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnUpdateAttributeList>activestageid</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.23</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_cliente_potencial_oportunidade</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - BPF - Bloqueio de retrocesso de etapas do BPF" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{3f6511d3-3b8b-44bf-bf50-08ad825c1fcc}">
+          <label languagecode="1046" description="Retrocesso não permitido. Contate o administrador." />
+        </steplabels>
+        <steplabels id="{a92e8e33-5176-414d-ac2f-0d7580a55896}">
+          <label languagecode="1046" description="Retrocesso não permitido. Contate o administrador." />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{a1205f70-d626-f111-88b3-6045bd3a08f2}" Name="UNIMEDBH - Ocorrência - Atualiza Data de Conclusão">
+      <XamlFileName>/Workflows/UNIMEDBH-Ocorrncia-AtualizaDatadeConcluso-A1205F70-D626-F111-88B3-6045BD3A08F2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Incident</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Atualiza Data de Conclusão" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{09b907df-d626-f111-88b3-6045bd3a08f2}" Name="UNIMEDBH - Lead Convertido - Bloquear reabertura">
+      <XamlFileName>/Workflows/UNIMEDBH-LeadConvertido-Bloquearreabertura-09B907DF-D626-F111-88B3-6045BD3A08F2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>20</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead Convertido - Bloquear reabertura" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{45cae3ca-a19f-4d96-a617-b0f2191728eb}">
+          <label languagecode="1046" description="O Lead informado já foi convertido e se tornou uma Conta. Por favor, atualize as informações de atendimento diretamente na conta já existente." />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{43883e93-2296-4ba1-8f9f-fee54390c01b}" Name="UNIMEDBH - Cliente Potencial - Endereço Aprovado">
+      <XamlFileName>/Workflows/UNIMEDBH-ClientePotencial-EndereoAprovado-43883E93-2296-4BA1-8F9F-FEE54390C01B.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Cliente Potencial - Endereço Aprovado" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{1de17dec-361f-4233-b821-d61b2398494f}">
+          <label languagecode="1046" description="Não é possível seguir sem a aprovação do endereço. Aprove o endereço para poder prosseguir!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{23282dd6-fe0f-f011-998a-000d3a887e8d}" Name="UNIMEDBH - Cliente Potencial até Oportunidade">
+      <XamlFileName>/Workflows/UNIMEDBH-ClientePotencialatOportunidade-23282DD6-FE0F-F011-998A-000D3A887E8D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>4</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <processorder>0</processorder>
+      <RunAs>1</RunAs>
+      <UniqueName>ubh_cliente_potencial_oportunidade</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>1</ProcessTriggerScope>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Cliente Potencial até Oportunidade" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{3f2ed9d1-efc0-46bb-a0dc-da3c04a5ecde}">
+          <label languagecode="1046" description="Captação" />
+        </steplabels>
+        <steplabels id="{9489c9bf-28f0-47b1-8e5f-a1c0254b7948}">
+          <label languagecode="1046" description="Tipo de Atendimento" />
+        </steplabels>
+        <steplabels id="{572d7e1a-7ec4-48ef-85eb-5ec03e98598f}">
+          <label languagecode="1046" description="Canal de Entrada" />
+        </steplabels>
+        <steplabels id="{380be4c8-7cd3-4e5e-990d-a5edc2e255f4}">
+          <label languagecode="1046" description="Origem do Registro" />
+        </steplabels>
+        <steplabels id="{97d1730c-b751-4315-810f-c75b6d1d72a1}">
+          <label languagecode="1046" description="Qualificação" />
+        </steplabels>
+        <steplabels id="{aa9db45a-be63-45ef-8e21-eced3971d4d2}">
+          <label languagecode="1046" description="Nome" />
+        </steplabels>
+        <steplabels id="{20e20172-87f6-4c70-9644-a21a5656b434}">
+          <label languagecode="1046" description="Sobrenome" />
+        </steplabels>
+        <steplabels id="{ac8ebabe-95be-4226-9392-fea319098792}">
+          <label languagecode="1046" description="CPF" />
+        </steplabels>
+        <steplabels id="{1cb4eb2b-d1d5-406f-a53e-2cc6abca3820}">
+          <label languagecode="1046" description="Quantidade de Vidas Novas" />
+        </steplabels>
+        <steplabels id="{cbda5f6d-635d-40fb-b5a4-51ab089b3ed7}">
+          <label languagecode="1046" description="CEP" />
+        </steplabels>
+        <steplabels id="{a9319c78-d501-4fb7-9acf-695c3ccf711d}">
+          <label languagecode="1046" description="Logradouro" />
+        </steplabels>
+        <steplabels id="{2a4a4c50-a688-49f8-8489-3a103e527b58}">
+          <label languagecode="1046" description="Número" />
+        </steplabels>
+        <steplabels id="{1c5201fb-b5c6-4fb1-b92d-8131b03cbea3}">
+          <label languagecode="1046" description="Complemento" />
+        </steplabels>
+        <steplabels id="{64a21e58-1151-4fb6-a17d-4675286a1b4a}">
+          <label languagecode="1046" description="Bairro" />
+        </steplabels>
+        <steplabels id="{99f648ac-8722-40f8-90ac-15b6b18fc5a3}">
+          <label languagecode="1046" description="Cidade" />
+        </steplabels>
+        <steplabels id="{b357bd43-f574-4cd7-9f29-84514422e859}">
+          <label languagecode="1046" description="Estado/UF" />
+        </steplabels>
+        <steplabels id="{7b19be53-c827-470e-aca7-753b19c23aa3}">
+          <label languagecode="1046" description="Endereço Aprovado?" />
+        </steplabels>
+        <steplabels id="{b9ca0399-da4f-4a37-a3eb-aeac4b4773a1}">
+          <label languagecode="1046" description="Negociação" />
+        </steplabels>
+        <steplabels id="{4d1dd58d-ec4d-4652-8a07-f803317fa8ec}">
+          <label languagecode="1046" description="Aceitou receber proposta comercial?" />
+        </steplabels>
+        <steplabels id="{bcdbcdbf-a798-471e-ac1d-7a15265761ff}">
+          <label languagecode="1046" description="Lead Encerrado" />
+        </steplabels>
+        <steplabels id="{e9170e20-0ea9-4bc3-aca4-6893e1d332c1}">
+          <label languagecode="1046" description="Data da Conversão" />
+        </steplabels>
+        <steplabels id="{79af9e06-bb5a-450a-9f0b-38ad12b84fd3}">
+          <label languagecode="1046" description="Qualificação" />
+        </steplabels>
+        <steplabels id="{95c7ee4a-08f3-45b3-ad45-0550f401441d}">
+          <label languagecode="1046" description="Nome da Empresa" />
+        </steplabels>
+        <steplabels id="{d3974195-ef7b-4f76-803c-a75c354fe1cf}">
+          <label languagecode="1046" description="CNPJ" />
+        </steplabels>
+        <steplabels id="{9ad75b59-7fe3-4de4-aa31-5650660bcfda}">
+          <label languagecode="1046" description="CEP" />
+        </steplabels>
+        <steplabels id="{3b6d7fe6-3e0f-4964-95a0-30fbadf02a0f}">
+          <label languagecode="1046" description="Quantidade de Vidas Novas" />
+        </steplabels>
+        <steplabels id="{e97c842d-d148-43eb-9f61-52d64d2c33e0}">
+          <label languagecode="1046" description="Logradouro" />
+        </steplabels>
+        <steplabels id="{2990570c-24ee-4a16-9d90-13eb30a257ec}">
+          <label languagecode="1046" description="Número" />
+        </steplabels>
+        <steplabels id="{f5312c26-bd1a-4c3d-856b-4e4a06113d76}">
+          <label languagecode="1046" description="Complemento" />
+        </steplabels>
+        <steplabels id="{f3111434-77c5-4f33-98ec-39f59b6b4220}">
+          <label languagecode="1046" description="Bairro" />
+        </steplabels>
+        <steplabels id="{a16bb5ae-2278-4b23-bd96-4cf0c6c40323}">
+          <label languagecode="1046" description="Cidade" />
+        </steplabels>
+        <steplabels id="{d7e3a01c-7508-420d-8fe7-6adcec1f8c57}">
+          <label languagecode="1046" description="Estado/UF" />
+        </steplabels>
+        <steplabels id="{8cd0d2aa-7892-4dfa-a028-210c5c5810f0}">
+          <label languagecode="1046" description="Endereço Aprovado?" />
+        </steplabels>
+        <steplabels id="{bc8f633a-29cf-4dc1-a300-1859a7fc18a9}">
+          <label languagecode="1046" description="Negociação" />
+        </steplabels>
+        <steplabels id="{034d584f-6179-4da8-adf3-e18bc68ef580}">
+          <label languagecode="1046" description="Aceitou receber proposta comercial?" />
+        </steplabels>
+        <steplabels id="{d971addd-438d-4426-9b20-f86c8363dc76}">
+          <label languagecode="1046" description="Lead Encerrado" />
+        </steplabels>
+        <steplabels id="{95086159-7b87-41ab-87bb-25f130edd40c}">
+          <label languagecode="1046" description="Data da Conversão" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{a6f9238e-7527-f111-88b4-000d3ac0d94f}" Name="UNIMEDBH - Lead Perdido ou Bloqueado Reabrir">
+      <XamlFileName>/Workflows/UNIMEDBH-LeadPerdidoouBloqueadoReabrir-A6F9238E-7527-F111-88B4-000D3AC0D94F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>20</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.24.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead Perdido ou Bloqueado Reabrir" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{b928be29-422c-f111-88b4-7ced8da8d97e}" Name="UNIMEDBH - Oportunidade - Criação de Tarefa Automática Via Integração e Notificação" Description="Na criação automática de oportunidades pelo PICVendas (integração = true), caso a temperatura e justificativa não estejam preenchidas, o sistema deve criar automaticamente uma tarefa para o consultor responsável atualizar esses campos.">
+      <JsonFileName>/Workflows/UNIMEDBH-Oportunidade-CriaodeTarefaAutomticaViaInt-B928BE29-422C-F111-88B4-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.30.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Criação de Tarefa Automática Via Integração e Notificação" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1046" description="Na criação automática de oportunidades pelo PICVendas (integração = true), caso a temperatura e justificativa não estejam preenchidas, o sistema deve criar automaticamente uma tarefa para o consultor responsável atualizar esses campos." />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{d70662b9-f12c-f111-88b4-6045bd3a08f2}" Name="UNIMEDBH - Envio de Ligação Televendas - Atribuir">
+      <XamlFileName>/Workflows/UNIMEDBH-EnviodeLigaoTelevendas-Atribuir-D70662B9-F12C-F111-88B4-6045BD3A08F2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.3.31.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_envio_ligacao_televendas</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Envio de Ligação Televendas - Atribuir" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{2317d37f-7998-f011-b41b-6045bd3bff0c}" Name="UNIMEDBH - Lead - Preencher Canal do Usuário Criador">
+      <XamlFileName>/Workflows/UNIMEDBH-Lead-PreencherCanaldoUsurioCriador-2317D37F-7998-F011-B41B-6045BD3BFF0C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.9.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Preencher Canal do Usuário Criador" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{e2894f00-d32d-f111-88b4-6045bd3a08f2}" Name="UNIMEDBH-Envio Ligacao Televendas-Data Vencimento">
+      <XamlFileName>/Workflows/UNIMEDBH-EnvioLigacaoTelevendas-DataVencimento-E2894F00-D32D-F111-88B4-6045BD3A08F2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.1.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_envio_ligacao_televendas</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH-Envio Ligacao Televendas-Data Vencimento" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{32539fae-7e32-f111-88b4-7ced8da8d97e}" Name="UNIMEDBH - Ocorrência - Criação da tarefa do GRAP">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-CriaodatarefadoGRAP-32539FAE-7E32-F111-88B4-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.7.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Criação da tarefa do GRAP" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{72c61556-ce38-f111-88b4-000d3ac0d94f}" Name="UNIMEDBH - Ocorrência - Finalização automática de ocorrências solucionadas após 5 dias úteis">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-Finalizaoautomticadeocorrnciass-72C61556-CE38-F111-88B4-000D3AC0D94F.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.15.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Finalização automática de ocorrências solucionadas após 5 dias úteis" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{505c6599-e83c-f111-88b4-6045bd3a08f2}" Name="UNIMEDBH - Itens SLA - Reset SLA ao Reabrir Ocorrência">
+      <JsonFileName>/Workflows/UNIMEDBH-ItensSLA-ResetSLAaoReabrirOcorrncia-505C6599-E83C-F111-88B4-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.20.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Itens SLA - Reset SLA ao Reabrir Ocorrência" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{b3d09691-f643-f111-bec7-6045bd3a08f2}" Name="UNIMEDBH - Tarefa -  Altera razão de status para vencida">
+      <JsonFileName>/Workflows/UNIMEDBH-Tarefa-Alterarazodestatusparavencida-B3D09691-F643-F111-BEC7-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.29.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa -  Altera razão de status para vencida" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{7d2fb28f-b905-f111-8407-6045bd3a08f2}" Name="UNIMEDBH - Reserva Membro Regionalizacao">
+      <XamlFileName>/Workflows/UNIMEDBH-ReservaMembroRegionalizacao-7D2FB28F-B905-F111-8407-6045BD3A08F2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>3</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <SdkMessageId>{832fb28f-b905-f111-8407-6045bd3a08f2}</SdkMessageId>
+      <UniqueName>ReservaMembroRegionalizacao</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.2.9.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Reserva Membro Regionalizacao" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{b691887a-5d4d-f111-bec7-7ced8da8d97e}" Name="UNIMEDBH - Ocorrência - Salvar anexos de email no SharePoint">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-SalvaranexosdeemailnoSharePoint-B691887A-5D4D-F111-BEC7-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.11.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Salvar anexos de email no SharePoint" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{12fd2cdc-b447-f111-bec7-6045bd3a08f2}" Name="ARC: E-Mail de Entrada e Data de Criação (do not delete or rename)">
+      <JsonFileName>/Workflows/ARCE-MaildeEntradaeDatadeCriaodonotdeleteorrename-12FD2CDC-B447-F111-BEC7-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>9301</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>QueueItem</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="ARC: E-Mail de Entrada e Data de Criação (do not delete or rename)" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{6539b779-9250-f111-bec7-6045bd3a08f2}" Name="UNIMEDBH - Resposta de pesquisa - Preencher proprietário e gerencia">
+      <JsonFileName>/Workflows/UNIMEDBH-Respostadepesquisa-Preencherproprietrioeg-6539B779-9250-F111-BEC7-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.15.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Resposta de pesquisa - Preencher proprietário e gerencia" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{74f86f3b-0c55-f111-bec7-7ced8da8d97e}" Name="UNIMEDBH - Conta - Preenche Nome da Conta PF e Médico Cooperado">
+      <XamlFileName>/Workflows/UNIMEDBH-Conta-PreencheNomedaContaPFeMdicoCooperad-74F86F3B-0C55-F111-BEC7-7CED8DA8D97E.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.21.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Account</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Preenche Nome da Conta PF e Médico Cooperado" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{e55129b7-3159-f111-a825-6045bd3a08f2}" Name="UNIMEDBH - Ocorrência - Criação da tarefa para Área Tratativa">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-CriaodatarefaparareaTratativa-E55129B7-3159-F111-A825-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.26.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Criação da tarefa para Área Tratativa" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{b3f47020-3000-f011-88b4-000d3ac0d94f}" Name="UNIMEDBH - Ocorrência - Roteamento Manual">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-RoteamentoManual-B3F47020-3000-F011-88B4-000D3AC0D94F.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Roteamento Manual" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{8bff7a7c-5a5d-f111-a825-7ced8da8d97e}" Name="UNIMEDBH - Ocorrência - Buscar arquivos no SharePoint">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-BuscararquivosnoSharePoint-8BFF7A7C-5A5D-F111-A825-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.31.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Buscar arquivos no SharePoint" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c2b477f9-f963-f111-ab0c-00224836b0b2}" Name="UNIMEDBH - E-MAIL-&gt;Alteração da Razão Status Occ-&gt;Resposta Recebida do Cliente ">
+      <XamlFileName>/Workflows/UNIMEDBH-E-MAIL-AlteraodaRazoStatusOcc-RespostaRec-C2B477F9-F963-F111-AB0C-00224836B0B2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.9.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Email</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - E-MAIL-&gt;Alteração da Razão Status Occ-&gt;Resposta Recebida do Cliente " />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{21f87e98-3364-f111-ab0c-00224836b0b2}" Name="UNIMEDBH - Tarefa - Fluxo de notificação GRCO">
+      <JsonFileName>/Workflows/UNIMEDBH-Tarefa-FluxodenotificaoGRCO-21F87E98-3364-F111-AB0C-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.9.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa - Fluxo de notificação GRCO" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{a5522874-eef6-f011-8407-7ced8da8d97e}" Name="UNIMEDBH - Tarefa - Fluxo de Indicação GRCO">
+      <JsonFileName>/Workflows/UNIMEDBH-Tarefa-FluxodeIndicaoGRCO-A5522874-EEF6-F011-8407-7CED8DA8D97E.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.1.21.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa - Fluxo de Indicação GRCO" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c7bd30f5-f964-f111-ab0c-00224836b0b2}" Name="UNIMEDBH - Interação - Desativa na criação">
+      <XamlFileName>/Workflows/UNIMEDBH-Interao-Desativanacriao-C7BD30F5-F964-F111-AB0C-00224836B0B2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.10.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_interacao</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Interação - Desativa na criação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{37398f2a-f264-f111-ab0c-6045bd3c308d}" Name="UNIMEDBH - Ocorrência - Notificação de Ocorrencias Status Aviso de Falha e Expirada">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-NotificaodeOcorrenciasStatusAvi-37398F2A-F264-F111-AB0C-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.10.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Notificação de Ocorrencias Status Aviso de Falha e Expirada" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{8f787734-5566-f111-ab0c-00224836b0b2}" Name="UNIMEDBH - Interação - Atualização da Ocorrência para Pendente com o Cliente">
+      <JsonFileName>/Workflows/UNIMEDBH-Interao-AtualizaodaOcorrnciaparaPendentec-8F787734-5566-F111-AB0C-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.12.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Interação - Atualização da Ocorrência para Pendente com o Cliente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d2f2ae48-bb69-f111-ab0c-00224836b0b2}" Name="UNIMEDBH - Conta - Fluxo de Distribuição de Contas" Description="Decidido pela área de negocio que o fluxo, inicialmente, irá distribuir todos os registros que entrarem no fluxo para o Gustavo Isolani.">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-FluxodeDistribuiodeContas-D2F2AE48-BB69-F111-AB0C-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.16.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Fluxo de Distribuição de Contas" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1046" description="Decidido pela área de negocio que o fluxo, inicialmente, irá distribuir todos os registros que entrarem no fluxo para o Gustavo Isolani." />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{0e948dfa-fc6e-f111-ab0f-00224836b0b2}" Name="UNIMEDBH - Usuario - Integração EntraId - Buscar Matricula">
+      <JsonFileName>/Workflows/UNIMEDBH-Usuario-IntegraoEntraId-BuscarMatricula-0E948DFA-FC6E-F111-AB0F-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Usuario - Integração EntraId - Buscar Matricula" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c39af4d5-0c6f-f111-ab0f-6045bd3c308d}" Name="UNIMEDBH - Usuario - Atualiza Matricula (Atualizar User AD SIM) ">
+      <XamlFileName>/Workflows/UNIMEDBH-Usuario-AtualizaMatriculaAtualizarUserADS-C39AF4D5-0C6F-F111-AB0F-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>SystemUser</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Usuario - Atualiza Matricula (Atualizar User AD SIM) " />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{03e0393f-9a70-f111-ab0e-002248e108cf}" Name="UNIMEDBH - Etapa de Aprovação - Preenche Nome Etapa">
+      <JsonFileName>/Workflows/UNIMEDBH-EtapadeAprovao-PreencheNomeEtapa-03E0393F-9A70-F111-AB0E-002248E108CF.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.25.2</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>0</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Etapa de Aprovação - Preenche Nome Etapa" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{439ad5c8-5671-f111-ab0f-6045bd3c308d}" Name="UNIMEDBH - Solicitação de Aprovação - Preenche Numero da Solicitação">
+      <XamlFileName>/Workflows/UNIMEDBH-SolicitaodeAprovao-PreencheNumerodaSolici-439AD5C8-5671-F111-AB0F-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.26.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_solicitacao_aprovacao</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Solicitação de Aprovação - Preenche Numero da Solicitação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{dd5c8af3-8c71-f111-ab0f-00224836b0b2}" Name="UNIMEDBH - Etapa de Aprovação - Cria Etapa de Aprovação">
+      <JsonFileName>/Workflows/UNIMEDBH-EtapadeAprovao-CriaEtapadeAprovao-DD5C8AF3-8C71-F111-AB0F-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.26.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Etapa de Aprovação - Cria Etapa de Aprovação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{29ef5c53-ac74-f111-ab0e-6045bd3c308d}" Name="UNIMEDBH - Solicitação de Aprovação - Enviar Aprovação">
+      <JsonFileName>/Workflows/UNIMEDBH-SolicitaodeAprovao-EnviarAprovao-29EF5C53-AC74-F111-AB0E-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.6.30.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Solicitação de Aprovação - Enviar Aprovação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{07f378f9-8832-f111-88b4-000d3ac0d94f}" Name="UNIMEDBH - Ocorrência - Alteração da Razão Status Classificado ">
+      <XamlFileName>/Workflows/UNIMEDBH-Ocorrncia-AlteraodaRazoStatusClassificado-07F378F9-8832-F111-88B4-000D3AC0D94F.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_processo_atendimentoid</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.7.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Incident</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Alteração da Razão Status Classificado " />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{b3292a7d-0d7a-f111-ab0e-e4fade03a332}" Name="UNIMEDBH - Aprovação - Cancelar Solicitação de Aprovação ao Resolver ou Cancelar uma Ocorrência">
+      <JsonFileName>/Workflows/UNIMEDBH-Aprovao-CancelarSolicitaodeAprovaoaoResol-B3292A7D-0D7A-F111-AB0E-E4FADE03A332.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.7.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Aprovação - Cancelar Solicitação de Aprovação ao Resolver ou Cancelar uma Ocorrência" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{ce45e11c-127a-f111-ab0e-6045bd3a991a}" Name="UNIMEDBH - Aprovação - Cancelar Etapas de Aprovação Pendente ao Cancelar Solicitação de Aprovação">
+      <JsonFileName>/Workflows/UNIMEDBH-Aprovao-CancelarEtapasdeAprovaoPendenteao-CE45E11C-127A-F111-AB0E-6045BD3A991A.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.7.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Aprovação - Cancelar Etapas de Aprovação Pendente ao Cancelar Solicitação de Aprovação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{a7a0247d-c95a-f111-a825-7ced8da8d97e}" Name="UNIMEDBH - Ocorrência - Alteração da Razão Status para Em Tratamento">
+      <XamlFileName>/Workflows/UNIMEDBH-Ocorrncia-AlteraodaRazoStatusparaEmTratam-A7A0247D-C95A-F111-A825-7CED8DA8D97E.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>ubh_responsavel_atual,ubh_processo_atendimentoid</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.5.28.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Incident</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Alteração da Razão Status para Em Tratamento" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{35173a77-bd39-f111-88b4-7ced8da8d97e}" Name="UNIMEDBH - Item Fila Atualz Camp Trabalhado Por- Regra :Ocorrencia - Preench camp resposanvel Atual ">
+      <XamlFileName>/Workflows/UNIMEDBH-ItemFilaAtualzCampTrabalhadoPor-RegraOcor-35173A77-BD39-F111-88B4-7CED8DA8D97E.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>workerid</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.4.16.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>QueueItem</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Item Fila Atualz Camp Trabalhado Por- Regra :Ocorrencia - Preench camp resposanvel Atual " />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{e12097ca-a925-4d3f-8248-c9f6cab9795c}">
+          <label languagecode="1046" description="Este item já foi escolhido por outro agente e não pode ser selecionado novamente." />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{7ef7d3ba-317a-f111-ab0e-00224836b0b2}" Name="UNIMEDBH - Item Fila Criação Camp Trabalhado Por- Regra:Ocorrencia Reab- Preenc/Limpa camp ResposAtu">
+      <XamlFileName>/Workflows/UNIMEDBH-ItemFilaCriaoCampTrabalhadoPor-RegraOcorr-7EF7D3BA-317A-F111-AB0E-00224836B0B2.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.7.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>QueueItem</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Item Fila Criação Camp Trabalhado Por- Regra:Ocorrencia Reab- Preenc/Limpa camp ResposAtu" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{2dedee4e-8c7c-f111-ab0e-6045bd3c308d}" Name="UNIMEDBH - Conta- Atribuicao de propriedade da Conta ao vendedor">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-AtribuicaodepropriedadedaContaaoven-2DEDEE4E-8C7C-F111-AB0E-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.10.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta- Atribuicao de propriedade da Conta ao vendedor" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{62ff47ed-cb7e-f111-ab0e-00224836b0b2}" Name="UNIMEDBH - Solicitação de Aprovação - Retomar Aprovação">
+      <JsonFileName>/Workflows/UNIMEDBH-SolicitaodeAprovao-RetomarAprovao-62FF47ED-CB7E-F111-AB0E-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.13.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Solicitação de Aprovação - Retomar Aprovação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{5bef15cb-a47f-f111-ab0e-6045bd3c308d}" Name="UNIMEDBH - Ocorrencia- Envio da Pesquisa de sastifação">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrencia-EnviodaPesquisadesastifao-5BEF15CB-A47F-F111-AB0E-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.14.2</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrencia- Envio da Pesquisa de sastifação" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9f079e9c-6a84-f111-ab0f-6045bd3c308d}" Name="UnimedBH - Ocorrência - Pendente com Cliente">
+      <XamlFileName>/Workflows/UnimedBH-Ocorrncia-PendentecomCliente-9F079E9C-6A84-F111-AB0F-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statuscode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.20.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Incident</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UnimedBH - Ocorrência - Pendente com Cliente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{17337d50-6e84-f111-ab0f-00224836b0b2}" Name="UNIMEDBH - Ocorrencia - Notificar Interlocutor Canal Email">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrencia-NotificarInterlocutorCanalEmai-17337D50-6E84-F111-AB0F-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.20.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrencia - Notificar Interlocutor Canal Email" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d0777ee9-7184-f111-ab0f-6045bd3c308d}" Name="UNIMEDBH - Ocorrência - Notificações por Inatividade do Cliente">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-NotificaesporInatividadedoClien-D0777EE9-7184-F111-AB0F-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.20.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Notificações por Inatividade do Cliente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{0fafc6a6-2285-f111-ab0f-00224836b0b2}" Name="UNIMEDBH - Usuario - Atualiza TimeZone">
+      <JsonFileName>/Workflows/UNIMEDBH-Usuario-AtualizaTimeZone-0FAFC6A6-2285-F111-AB0F-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.21.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Usuario - Atualiza TimeZone" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{785f5298-8d86-f111-ab0f-6045bd3c308d}" Name="UNIMEDBH - Ocorrência - Notificações pendência para o cliente">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-Notificaespendnciaparaocliente-785F5298-8D86-F111-AB0F-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.23.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Notificações pendência para o cliente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{0b0405f1-7488-f111-8077-00224836b0b2}" Name="UNIMEDBH - Ocorrência - Criar pasta no SharePoint">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-CriarpastanoSharePoint-0B0405F1-7488-F111-8077-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.25.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Criar pasta no SharePoint" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{a323b411-f089-f111-8076-7ced8da83099}" Name="UNIMEDBH - Lead - Regra de Porte">
+      <XamlFileName>/Workflows/UNIMEDBH-Lead-RegradePorte-A323B411-F089-F111-8076-7CED8DA83099.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.7.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Lead</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Regra de Porte" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{2765ddf6-f88f-f111-8076-002248df36f9}" Name="ARC: EMAIL DE ENTRADA - CENTRAL DE ATENDIMENTO DA UNIMED-BH (do not delete or rename)">
+      <JsonFileName>/Workflows/ARCEMAILDEENTRADA-CENTRALDEATENDIMENTODAUNIMED-BHd-2765DDF6-F88F-F111-8076-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>9301</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>QueueItem</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="ARC: EMAIL DE ENTRADA - CENTRAL DE ATENDIMENTO DA UNIMED-BH (do not delete or rename)" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{a9379b91-e594-f111-b8db-002248df36f9}" Name="UNIMEDBH - Conta - Cancelar Agendamentos na Troca de Proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-CancelarAgendamentosnaTrocadePropri-A9379B91-E594-F111-B8DB-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.10.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Cancelar Agendamentos na Troca de Proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d530184d-e894-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Lead - Cancelar Agendamentos na Troca de Proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Lead-CancelarAgendamentosnaTrocadeProprie-D530184D-E894-F111-B8DC-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.10.4</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Cancelar Agendamentos na Troca de Proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{e552b135-eb94-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Grupo Empresarial - Cancelar Agendamentos na Troca de Proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-GrupoEmpresarial-CancelarAgendamentosnaTr-E552B135-EB94-F111-B8DC-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.10.4</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Grupo Empresarial - Cancelar Agendamentos na Troca de Proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d8162b45-8395-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Conta - Bloqueio Conta Genérica">
+      <XamlFileName>/Workflows/UNIMEDBH-Conta-BloqueioContaGenrica-D8162B45-8395-F111-B8DC-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statecode,ownerid,name</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>1</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <DeleteStage>20</DeleteStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.11.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Account</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Bloqueio Conta Genérica" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{3b60a8da-470d-426d-9d1c-8af1b3202be5}">
+          <label languagecode="1046" description="Esta conta não pode ser modificada / excluída ... Consulte a TI para mais detalhes!!!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{034cc9ec-0d9b-f111-b8dc-002248df36f9}" Name="UNIMEDBH - Ata - Encerramento Automático de Atas Sem Assinatura Após XX Dias">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-EncerramentoAutomticodeAtasSemAssinat-034CC9EC-0D9B-F111-B8DC-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.18.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Encerramento Automático de Atas Sem Assinatura Após XX Dias" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{38530150-2b9b-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Ocorrencia - Criar vinculo entre interlocutor e conta">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrencia-Criarvinculoentreinterlocutore-38530150-2B9B-F111-B8DC-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.18.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrencia - Criar vinculo entre interlocutor e conta" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{769aabd6-549d-f111-b8de-002248df36f9}" Name="UNIMEDBH - Ata - Re-Envio Automático de Envelope(Aguardando assinatura)">
+      <JsonFileName>/Workflows/UNIMEDBH-Ata-Re-EnvioAutomticodeEnvelopeAguardando-769AABD6-549D-F111-B8DE-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.21.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ata - Re-Envio Automático de Envelope(Aguardando assinatura)" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{5e694528-1ca2-f111-b8dd-00224836b0b2}" Name="UNIMEDBH - Conta - Compartilhar tarefa inativa com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-Compartilhartarefainativacomnovopro-5E694528-1CA2-F111-B8DD-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Compartilhar tarefa inativa com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9516498d-1da2-f111-b8dd-002248df36f9}" Name="UNIMEDBH - Lead - Compartilhar tarefa inativa com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Lead-Compartilhartarefainativacomnovoprop-9516498D-1DA2-F111-B8DD-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Compartilhar tarefa inativa com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9abc7e49-21a2-f111-b8dd-6045bd3c308d}" Name="UNIMEDBH - Grupo Empresarial - Compartilhar tarefa inativa com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-GrupoEmpresarial-Compartilhartarefainativ-9ABC7E49-21A2-F111-B8DD-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Grupo Empresarial - Compartilhar tarefa inativa com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d9651c49-26a2-f111-b8dd-6045bd3c308d}" Name="UNIMEDBH - Conta - Compartilhar oportunidades inativa com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-Compartilharoportunidadesinativacom-D9651C49-26A2-F111-B8DD-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Compartilhar oportunidades inativa com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c89f0f56-25a2-f111-b8dd-002248df36f9}" Name="UNIMEDBH - Lead - Compartilhar oportunidades inativa com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Lead-Compartilharoportunidadesinativacomn-C89F0F56-25A2-F111-B8DD-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.27.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Compartilhar oportunidades inativa com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{ff436e0b-b79c-f111-b8dc-6045bd39abdd}" Name="UNIMEDBH - Conta - Compartilhar ata com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Conta-Compartilharatacomnovoproprietrio-FF436E0B-B79C-F111-B8DC-6045BD39ABDD.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.20.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Conta - Compartilhar ata com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{40e7026d-f89b-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Grupo Empresarial - Compartilhar ata com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-GrupoEmpresarial-Compartilharatacomnovopr-40E7026D-F89B-F111-B8DC-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.19.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Grupo Empresarial - Compartilhar ata com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c194062b-069c-f111-b8dc-6045bd3c308d}" Name="UNIMEDBH - Lead - Compartilhar ata com novo proprietário">
+      <JsonFileName>/Workflows/UNIMEDBH-Lead-Compartilharatacomnovoproprietrio-C194062B-069C-F111-B8DC-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.8.19.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Lead - Compartilhar ata com novo proprietário" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{6bb4ec1f-c2a7-f111-aaad-6045bd3c308d}" Name="UNIMEDBH - Tarefa de Atendimento - Retornado pela área técnica">
+      <XamlFileName>/Workflows/UNIMEDBH-TarefadeAtendimento-Retornadopelareatcnic-6BB4EC1F-C2A7-F111-AAAD-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnUpdateAttributeList>statuscode</TriggerOnUpdateAttributeList>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <UpdateStage>40</UpdateStage>
+      <RunAs>0</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.3.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_tarefa_atendimento</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa de Atendimento - Retornado pela área técnica" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{ad1217d5-e9ad-f111-aaac-00224836b0b2}" Name="UNIMEDBH - Tarefa de Atendimento (GRAP) - Retornado pela área técnica">
+      <JsonFileName>/Workflows/UNIMEDBH-TarefadeAtendimentoGRAP-Retornadopelareat-AD1217D5-E9AD-F111-AAAC-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.11.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa de Atendimento (GRAP) - Retornado pela área técnica" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{013cb451-90b2-f111-aaac-6045bd3c308d}" Name="UNIMEDBH - Oportunidade - Bloqueio exclusão oportunidade Integração">
+      <XamlFileName>/Workflows/UNIMEDBH-Oportunidade-BloqueioexclusooportunidadeI-013CB451-90B2-F111-AAAC-6045BD3C308D.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>1</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <CreateStage>40</CreateStage>
+      <DeleteStage>20</DeleteStage>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.17.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>Opportunity</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Oportunidade - Bloqueio exclusão oportunidade Integração" />
+      </LocalizedNames>
+      <labels>
+        <steplabels id="{e8725d73-53a6-456f-b57f-6f45b8f8f2b4}">
+          <label languagecode="1046" description="Você não tem permissão para excluir registros criados pela Integração (PIC)!" />
+        </steplabels>
+      </labels>
+    </Workflow>
+    <Workflow WorkflowId="{c038f362-0bb8-f111-aaae-6045bd3c308d}" Name="UNIMEDBH - Ocorrência - Criar Interação  Comunicações com o cliente">
+      <JsonFileName>/Workflows/UNIMEDBH-Ocorrncia-CriarInteraoComunicaescomoclien-C038F362-0BB8-F111-AAAE-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.24.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Ocorrência - Criar Interação  Comunicações com o cliente" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{7f51a275-ac8d-f011-b4cc-6045bd3844ac}" Name="UNIMEDBH - OportunidadeProduto - Preenche Nome">
+      <XamlFileName>/Workflows/UNIMEDBH-OportunidadeProduto-PreencheNome-7F51A275-AC8D-F011-B4CC-6045BD3844AC.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2025.9.9.1</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>ubh_oportunidade_produto</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - OportunidadeProduto - Preenche Nome" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{8950c87a-f1bc-f111-aaaf-002248df36f9}" Name="UNIMEDBH - SolicitacaoCadastro - Atualização Leads e Contas">
+      <JsonFileName>/Workflows/UNIMEDBH-SolicitacaoCadastro-AtualizaoLeadseContas-8950C87A-F1BC-F111-AAAF-002248DF36F9.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.30.2</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - SolicitacaoCadastro - Atualização Leads e Contas" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{858f6865-17bd-f111-aaaf-00224836b0b2}" Name="UNIMEDBH - Tarefa - Levantada de Mão">
+      <JsonFileName>/Workflows/UNIMEDBH-Tarefa-LevantadadeMo-858F6865-17BD-F111-AAAF-00224836B0B2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>0</StateCode>
+      <StatusCode>1</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>2026.9.30.2</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="UNIMEDBH - Tarefa - Levantada de Mão" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="new_shareddocusign_d3682">
+      <connectionreferencedisplayname>DocuSign</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_docusign</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_dataverse">
+      <connectionreferencedisplayname>Dataverse</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_http_microsoft_entra_id">
+      <connectionreferencedisplayname>HTTP with Microsoft Entra ID (pré-autorizado) - CRM</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_webcontents</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedapprovals_115ce">
+      <connectionreferencedisplayname>Aprovações</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_approvals</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_16139">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-16139</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_2ad0c">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-2ad0c</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_3177e">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_pesquisa-3177e</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_32d5d">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-32d5d</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_350df">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-350df</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_40258">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-40258</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_6b15f">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-6b15f</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_78bf8">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-78bf8</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_7cc22">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-7cc22</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_8dc05">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-8dc05</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_aaf5a">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-aaf5a</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_ac935">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-ac935</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_b30f6">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-b30f6</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_e54f2">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-e54f2</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedcommondataserviceforapps_e82d9">
+      <connectionreferencedisplayname>Microsoft Dataverse unimed_bh_automation-e82d9</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedconversionservice_fa02f">
+      <connectionreferencedisplayname>Conversão de Conteúdo</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_conversionservice</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedflowmanagement_b8f4e">
+      <connectionreferencedisplayname>Gerenciamento do Power Automate</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_flowmanagement</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedmicrosoftforms_a1d3c">
+      <connectionreferencedisplayname>Microsoft Forms unimed_bh_automation-a1d3c</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_microsoftforms</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedmicrosoftforms_a4ae8">
+      <connectionreferencedisplayname>Microsoft Forms unimed_bh_automation-a4ae8</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_microsoftforms</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedmicrosoftforms_c731b">
+      <connectionreferencedisplayname>Microsoft Forms unimed_bh_automation-c731b</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_microsoftforms</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedmicrosoftformspro_a111d">
+      <connectionreferencedisplayname>Dynamics 365 Customer Voice</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_microsoftformspro</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedoffice365_7e463">
+      <connectionreferencedisplayname>Office 365 Outlook unimed_bh-7e463</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedoffice365users_2da6f">
+      <connectionreferencedisplayname>Usuários do Office 365 unimed_bh_automation-2da6f</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365users</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedoutlook_055bb">
+      <connectionreferencedisplayname>Outlook.com unimed_bh_automation-055bb</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_outlook</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedsendmail_7e1cf">
+      <connectionreferencedisplayname>Email unimed_bh_automation-7e1cf</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedsendmail_b9143">
+      <connectionreferencedisplayname>Mail</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedsharepointonline_ef398">
+      <connectionreferencedisplayname>SharePoint</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sharepointonline</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedteams_00ee8">
+      <connectionreferencedisplayname>Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_teams</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedwebcontents_4ca0e">
+      <connectionreferencedisplayname>HTTP with Microsoft Entra ID (pré-autorizado) - Graph</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_webcontents</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1046</Language>
+  </Languages>
+</ImportExportXml>

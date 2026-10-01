@@ -1,0 +1,2605 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26092.142" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.26092.00142">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Tarefa de Atendimento" OriginalName="Tarefa de Atendimento">ubh_tarefa_atendimento</Name>
+      <EntityInfo>
+        <entity Name="ubh_tarefa_atendimento">
+          <attributes>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <Name>createdon</Name>
+              <LogicalName>createdon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>5.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Data de Criação" languagecode="1046" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Data e hora de criação da atividade." languagecode="1046" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ubh_instancia_kpi_sla">
+              <Type>lookup</Type>
+              <Name>ubh_instancia_kpi_sla</Name>
+              <LogicalName>ubh_instancia_kpi_sla</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>2026.3.9.1</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Instância do KPI de SLA" languagecode="1046" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1046" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{2f962efe-823a-f111-88b4-000d3ac0d94f}" Name="ServiceLevelAgreement_ActionFlow_31242d63-e47e-4f09-96a7-0d7290966c57">
+      <JsonFileName>/Workflows/ServiceLevelAgreement_ActionFlow_31242d63-e47e-4f0-2F962EFE-823A-F111-88B4-000D3AC0D94F.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <UniqueName>ServiceLevelAgreement_ActionFlow_31242d63-e47e-4f09-96a7-0d7290966c57</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>9751</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="ServiceLevelAgreement_ActionFlow_31242d63-e47e-4f09-96a7-0d7290966c57" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{12fd2cdc-b447-f111-bec7-6045bd3a08f2}" Name="ARC: E-Mail de Entrada e Data de Criação (do not delete or rename)">
+      <JsonFileName>/Workflows/ARCE-MaildeEntradaeDatadeCriaodonotdeleteorrename-12FD2CDC-B447-F111-BEC7-6045BD3A08F2.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>9301</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>QueueItem</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="ARC: E-Mail de Entrada e Data de Criação (do not delete or rename)" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{47a2ef54-4663-f111-ab0c-6045bd3c308d}" Name="ServiceLevelAgreement_ActionFlow_b509bd0f-ed8b-45bd-b034-e14fd08c9404">
+      <JsonFileName>/Workflows/ServiceLevelAgreement_ActionFlow_b509bd0f-ed8b-45b-47A2EF54-4663-F111-AB0C-6045BD3C308D.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>1</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <UniqueName>ServiceLevelAgreement_ActionFlow_b509bd0f-ed8b-45bd-b034-e14fd08c9404</UniqueName>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <RendererObjectTypeCode>9751</RendererObjectTypeCode>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1046" description="ServiceLevelAgreement_ActionFlow_b509bd0f-ed8b-45bd-b034-e14fd08c9404" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps>
+    <EntityMap>
+      <EntitySource>incident</EntitySource>
+      <EntityTarget>ubh_tarefa_atendimento</EntityTarget>
+      <AttributeMaps>
+        <AttributeMap>
+          <AttributeSource>ubh_protocolo</AttributeSource>
+          <AttributeTarget>ubh_protocolo_crm</AttributeTarget>
+        </AttributeMap>
+      </AttributeMaps>
+    </EntityMap>
+  </EntityMaps>
+  <EntityRelationships>
+    <EntityRelationship Name="ubh_tarefa_atendimento_instancia_kpi_sla">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>2026.3.9.1</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>ubh_tarefa_atendimento</ReferencingEntityName>
+      <ReferencedEntityName>SLAKPIInstance</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>ubh_instancia_kpi_sla</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="" languagecode="1046" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>ubh_instancia_kpi_sla_ubh_tarefa_atendimento</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>ubh_tarefa_atendimento_instancia_kpi_sla</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
+  </EntityRelationships>
+  <OrganizationSettings />
+  <optionsets />
+  <RoutingRules>
+    <RoutingRule RoutingRuleId="43d488c2-cf4e-f111-bec7-7ced8da8d97e" Name="Regras de Roteamento">
+      <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+      <Name>Regras de Roteamento</Name>
+      <Description>Regras de Roteamento</Description>
+      <RoutingRuleItems>
+        <RoutingRuleItem RoutingRuleItemId="1b9a780a-d04e-f111-bec7-7ced8da8d97e" Name="TICKET REGISTRO">
+          <Name>TICKET REGISTRO</Name>
+          <Description>TICKET REGISTRO</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_ticket_registro" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="1" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="not-null" /&gt;  &lt;/condition&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="57c6b88f-fc4e-f111-bec7-6045bd3a08f2" Name="GRAP - POSTO FECOMERCIO">
+          <Name>GRAP - POSTO FECOMERCIO</Name>
+          <Description>GRAP - POSTO FECOMERCIO</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="FECOME" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="51daddd1-9b4f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO FIEMG">
+          <Name>GRAP - POSTO FIEMG</Name>
+          <Description>GRAP - POSTO FIEMG</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="FFIEMG" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="55a1c532-b24f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO TRT">
+          <Name>GRAP - POSTO TRT</Name>
+          <Description>GRAP - POSTO TRT</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TRTTRT" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="3b071c4e-b24f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO OAB">
+          <Name>GRAP - POSTO OAB</Name>
+          <Description>GRAP - POSTO OAB</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="OABMG" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="42d0c966-b24f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO VALLOUREC">
+          <Name>GRAP - POSTO VALLOUREC</Name>
+          <Description>GRAP - POSTO VALLOUREC</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="VSB" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="a4df1e8d-b24f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO CNH">
+          <Name>GRAP - POSTO CNH</Name>
+          <Description>GRAP - POSTO CNH</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="CNH LA" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="232028c3-b24f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO MAGNESITA CONTAGEM">
+          <Name>GRAP - POSTO MAGNESITA CONTAGEM</Name>
+          <Description>GRAP - POSTO MAGNESITA CONTAGEM</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="MAGNES  CONTAGEM" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="0bb44b4a-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO MAGNESITA BRUMADO">
+          <Name>GRAP - POSTO MAGNESITA BRUMADO</Name>
+          <Description>GRAP - POSTO MAGNESITA BRUMADO</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="MAGNES  BRUMADO" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="64d2916f-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO SRIKO">
+          <Name>GRAP - POSTO SRIKO</Name>
+          <Description>GRAP - POSTO SRIKO</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="DYTECH" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="23c43a82-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO TEKSID">
+          <Name>GRAP - POSTO TEKSID</Name>
+          <Description>GRAP - POSTO TEKSID</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TEKSID" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="e58c66a0-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO NEMAK">
+          <Name>GRAP - POSTO NEMAK</Name>
+          <Description>GRAP - POSTO NEMAK</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="NEMAK" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="85a2f2b3-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO GERDAU">
+          <Name>GRAP - POSTO GERDAU</Name>
+          <Description>GRAP - POSTO GERDAU</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="GERDAU" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="8acdbbcd-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO TUPY">
+          <Name>GRAP - POSTO TUPY</Name>
+          <Description>GRAP - POSTO TUPY</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TUPY" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="ec54bce1-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO TAMBASA">
+          <Name>GRAP - POSTO TAMBASA</Name>
+          <Description>GRAP - POSTO TAMBASA</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TAMBAS" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="74da5cfb-b54f-f111-bec7-000d3ac0d94f" Name="GRAP - POSTO TRE">
+          <Name>GRAP - POSTO TRE</Name>
+          <Description>GRAP - POSTO TRE</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TREMGE" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="1ad7db14-b64f-f111-bec7-000d3ac0d94f" Name="GRAP - MOVIMENTACOES FIEMG">
+          <Name>GRAP - MOVIMENTACOES FIEMG</Name>
+          <Description>GRAP - MOVIMENTACOES FIEMG</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="FFIEMG" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="4260a42d-b64f-f111-bec7-000d3ac0d94f" Name="GRAP - Periódicos TRE">
+          <Name>GRAP - Periódicos TRE</Name>
+          <Description>GRAP - Periódicos TRE</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="TREMGE" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="c809f045-b64f-f111-bec7-000d3ac0d94f" Name="GRAP - REEMBOLSO GERDAU">
+          <Name>GRAP - REEMBOLSO GERDAU</Name>
+          <Description>GRAP - REEMBOLSO GERDAU</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="GERDAU" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="ad594558-b64f-f111-bec7-000d3ac0d94f" Name="GRCC - ASSEMBLEIA">
+          <Name>GRCC - ASSEMBLEIA</Name>
+          <Description>GRCC - ASSEMBLEIA</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="ASSLEG" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="a9523d6a-b64f-f111-bec7-000d3ac0d94f" Name="PREFEITURA DE NOVA LIMA">
+          <Name>PREFEITURA DE NOVA LIMA</Name>
+          <Description>PREFEITURA DE NOVA LIMA</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Posto de Atendimento&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c4f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_codigo" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="NVDMNC" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="bbf85c7d-237a-f111-ab0e-6045bd3c308d" Name="PROCESSOS COPART">
+          <Name>PROCESSOS COPART</Name>
+          <Description>Processos Copart</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_email_destinatario" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="processoscopart@unimedbh.com.br" dataslugs="" /&gt;  &lt;/condition&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="782439cb-237a-f111-ab0e-6045bd3c308d" Name="PROCESSOS CONCESSÕES">
+          <Name>PROCESSOS CONCESSÕES</Name>
+          <Description>Processos Concessões</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_email_destinatario" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="grcc-concessoes@unimedbh.com.br" dataslugs="" /&gt;  &lt;/condition&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="db204382-fa9a-f111-b8dc-002248df36f9" Name="GRAP - FALE CONOSCO">
+          <Name>GRAP - FALE CONOSCO</Name>
+          <Description>GRAP - FALE CONOSCO</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_processo_atendimentoid" /&gt;    &lt;column id="colOperator" value="not-null" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_processo_atendimento.ubh_processo_atendimentoid" /&gt;      &lt;column id="colAttribute" value="ubh_rotear_fale_conosco" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="1" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="e297df1f-247a-f111-ab0e-6045bd3c308d" Name="GRAP - EQUIPE PME">
+          <Name>GRAP - EQUIPE PME</Name>
+          <Description>GRAP - Equipe PME</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_email_destinatario" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="equipepme@unimedbh.com.br" dataslugs="" /&gt;  &lt;/condition&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="6e381abf-3390-f111-8076-002248df36f9" Name="EQUIPE ADESÃO">
+          <Name>EQUIPE ADESÃO</Name>
+          <Description>Equipe Adesão</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="1" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="f259f034-3590-f111-8076-002248df36f9" Name="EQUIPE CORRETORAS">
+          <Name>EQUIPE CORRETORAS</Name>
+          <Description>Equipe Corretoras</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="4;6" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="19d20c05-3590-f111-8076-002248df36f9" Name="EQUIPE GRANDES CONTAS">
+          <Name>EQUIPE GRANDES CONTAS</Name>
+          <Description>Equipe Grandes Contas</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="2;3;10" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="2f53f2d1-3590-f111-8077-6045bd3c308d" Name="EQUIPE MÉDIAS CONTAS">
+          <Name>EQUIPE MÉDIAS CONTAS</Name>
+          <Description>Equipe Médias Contas</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="7" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="7d519b09-3690-f111-8077-6045bd3c308d" Name="EQUIPE PME">
+          <Name>EQUIPE PME</Name>
+          <Description>Equipe PME</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="9" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="78642b79-3690-f111-8077-6045bd3c308d" Name="EQUIPE SETE LAGOAS">
+          <Name>EQUIPE SETE LAGOAS</Name>
+          <Description>Equipe Sete Lagoas</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Call Center (CRC)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c6f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;and&gt;    &lt;condition&gt;      &lt;column id="colEntity" value="ubh_grupo_empresarial.ubh_grupo_empresarialid" /&gt;      &lt;column id="colAttribute" value="ubh_porte_empresarial" /&gt;      &lt;column id="colOperator" value="eq" /&gt;      &lt;column id="colStaticValue" value="11" dataslugs="" /&gt;    &lt;/condition&gt;  &lt;/and&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+        <RoutingRuleItem RoutingRuleItemId="2c8082e1-f190-f111-8077-6045bd3c308d" Name="CLASSIFICADORES">
+          <Name>CLASSIFICADORES</Name>
+          <Description>Classificadores</Description>
+          <RoutingRuleId>{43d488c2-cf4e-f111-bec7-7ced8da8d97e}</RoutingRuleId>
+          <ConditionXml>&lt;and&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="ubh_canal_origem" /&gt;    &lt;column id="colOperator" value="eq" /&gt;    &lt;column id="colStaticValue" value="&amp;lt;lookup&amp;gt;&amp;lt;value uiname = &amp;quot;E-mail&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{bef0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;value uiname = &amp;quot;Fale Conosco (Espaço Empresa)&amp;quot; uitype = &amp;quot;ubh_canal_origem&amp;quot; &amp;gt;{c2f0d4d2-e70d-f111-8406-002248377d83}&amp;lt;/value&amp;gt;&amp;lt;/lookup&amp;gt;" dataslugs="" /&gt;  &lt;/condition&gt;  &lt;condition&gt;    &lt;column id="colEntity" value="incident" /&gt;    &lt;column id="colAttribute" value="customerid" /&gt;    &lt;column id="colOperator" value="not-null" /&gt;  &lt;/condition&gt;&lt;/and&gt;</ConditionXml>
+        </RoutingRuleItem>
+      </RoutingRuleItems>
+    </RoutingRule>
+  </RoutingRules>
+  <ConvertRules>
+    <ConvertRule ConvertRuleId="962d86d8-f68f-f111-8076-002248df36f9" Name="CENTRAL DE ATENDIMENTO DA UNIMED-BH">
+      <ConvertRuleItems>
+        <ConvertRuleItem ConvertRuleItemId="1e65ddf6-f88f-f111-8076-002248df36f9" Name="EMAIL DE ENTRADA - CENTRAL DE ATENDIMENTO DA UNIMED-BH">
+          <ConvertRuleItemId>{1E65DDF6-F88F-F111-8076-002248DF36F9}</ConvertRuleItemId>
+          <ConvertRuleId>{962D86D8-F68F-F111-8076-002248DF36F9}</ConvertRuleId>
+          <Name>EMAIL DE ENTRADA - CENTRAL DE ATENDIMENTO DA UNIMED-BH</Name>
+          <Description></Description>
+          <ConditionXml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="email"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="and"&gt;
+                &lt;condition attribute="createdon" operator="not-null"/&gt;
+                &lt;condition attribute="directioncode" operator="eq" value="0"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</ConditionXml>
+          <PropertiesXml></PropertiesXml>
+          <WorkflowId>{2765DDF6-F88F-F111-8076-002248DF36F9}</WorkflowId>
+          <PrimaryCreateEntityLogicalName>incident</PrimaryCreateEntityLogicalName>
+        </ConvertRuleItem>
+      </ConvertRuleItems>
+      <ConvertRuleId>{962d86d8-f68f-f111-8076-002248df36f9}</ConvertRuleId>
+      <Name>CENTRAL DE ATENDIMENTO DA UNIMED-BH</Name>
+      <SourceTypeCode>2</SourceTypeCode>
+      <AllowUnknownSender>1</AllowUnknownSender>
+      <SendAutomaticResponse>0</SendAutomaticResponse>
+      <CheckIfResolved>0</CheckIfResolved>
+      <CheckActiveEntitlement>0</CheckActiveEntitlement>
+      <CheckDirectMessages>0</CheckDirectMessages>
+      <CheckBlockedSocialProfile>0</CheckBlockedSocialProfile>
+      <SourceChannelEntity>email</SourceChannelEntity>
+      <RecordVersion>9.2.26073.146</RecordVersion>
+      <ConvertRuleType>1</ConvertRuleType>
+      <SenderResolutionOption>1</SenderResolutionOption>
+      <QueueScope>1</QueueScope>
+    </ConvertRule>
+    <ConvertRule ConvertRuleId="e3ffc09e-b447-f111-bec7-6045bd3a08f2" Name="GRAP - POSTO ATENDIMENTO">
+      <ConvertRuleItems>
+        <ConvertRuleItem ConvertRuleItemId="0ffd2cdc-b447-f111-bec7-6045bd3a08f2" Name="E-Mail de Entrada e Data de Criação">
+          <ConvertRuleItemId>{0FFD2CDC-B447-F111-BEC7-6045BD3A08F2}</ConvertRuleItemId>
+          <ConvertRuleId>{E3FFC09E-B447-F111-BEC7-6045BD3A08F2}</ConvertRuleId>
+          <Name>E-Mail de Entrada e Data de Criação</Name>
+          <Description></Description>
+          <ConditionXml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="email"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="createdon" operator="not-null"/&gt;
+            &lt;condition attribute="directioncode" operator="eq" value="0"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</ConditionXml>
+          <PropertiesXml></PropertiesXml>
+          <WorkflowId>{12FD2CDC-B447-F111-BEC7-6045BD3A08F2}</WorkflowId>
+          <PrimaryCreateEntityLogicalName>incident</PrimaryCreateEntityLogicalName>
+        </ConvertRuleItem>
+      </ConvertRuleItems>
+      <ConvertRuleId>{e3ffc09e-b447-f111-bec7-6045bd3a08f2}</ConvertRuleId>
+      <Name>GRAP - POSTO ATENDIMENTO</Name>
+      <SourceTypeCode>2</SourceTypeCode>
+      <AllowUnknownSender>1</AllowUnknownSender>
+      <SendAutomaticResponse>0</SendAutomaticResponse>
+      <CheckIfResolved>0</CheckIfResolved>
+      <CheckActiveEntitlement>0</CheckActiveEntitlement>
+      <CheckDirectMessages>0</CheckDirectMessages>
+      <CheckBlockedSocialProfile>0</CheckBlockedSocialProfile>
+      <SourceChannelEntity>email</SourceChannelEntity>
+      <RecordVersion>9.2.26043.151</RecordVersion>
+      <ConvertRuleType>1</ConvertRuleType>
+      <SenderResolutionOption>1</SenderResolutionOption>
+      <QueueScope>1</QueueScope>
+    </ConvertRule>
+  </ConvertRules>
+  <Slas>
+    <Sla SLAId="02c9014e-ed1b-f111-8342-7ced8da8d97e" Name="Ocorrência" PrimaryEntityLogicalName="incident">
+      <SLAId>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</SLAId>
+      <ApplicableFrom>NA</ApplicableFrom>
+      <Name>Ocorrência</Name>
+      <AllowPauseResume>0</AllowPauseResume>
+      <SLAType>1</SLAType>
+      <SLAVersion>100000001</SLAVersion>
+      <SlaItems>
+        <SlaItem slaitemid="61d3de95-ed1b-f111-8342-7ced8da8d97e" name="SLA 20 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{61d3de95-ed1b-f111-8342-7ced8da8d97e}</slaitemid>
+          <name>SLA 20 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="and"&gt;
+                &lt;condition attribute="statuscode" operator="not-in"&gt;
+                    &lt;value&gt;1&lt;/value&gt;
+                    &lt;value&gt;6&lt;/value&gt;
+                &lt;/condition&gt;
+            &lt;/filter&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{319f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="20 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>1</sequencenumber>
+          <workflowid>{2f962efe-823a-f111-88b4-000d3ac0d94f}</workflowid>
+          <failureafter>1200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <actionflowuniquename>ServiceLevelAgreement_ActionFlow_31242d63-e47e-4f09-96a7-0d7290966c57</actionflowuniquename>
+          <actionurl>https://flow.microsoft.com/manage/environments/2a1d4048-fac0-e5c8-8259-ec84f09ceee5/flows/3ec9b4d0-7d1d-4ba0-9c3b-1e0cff522585</actionurl>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="bb902da7-f91b-f111-8342-6045bd3a08f2" name="SLA 22 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{bb902da7-f91b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 22 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{b533dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="22 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>2</sequencenumber>
+          <workflowid>{47a2ef54-4663-f111-ab0c-6045bd3c308d}</workflowid>
+          <failureafter>1320</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <actionflowuniquename>ServiceLevelAgreement_ActionFlow_b509bd0f-ed8b-45bd-b034-e14fd08c9404</actionflowuniquename>
+          <actionurl>https://flow.microsoft.com/manage/environments/2a1d4048-fac0-e5c8-8259-ec84f09ceee5/flows/5970b70c-0d5b-4d24-a22f-02df8f261b3a</actionurl>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="90ec4abf-f91b-f111-8342-6045bd3a08f2" name="SLA 25 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{90ec4abf-f91b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 25 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{be33dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="25 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>3</sequencenumber>
+          <failureafter>1500</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="a97ff4de-f91b-f111-8342-6045bd3a08f2" name="SLA 30 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{a97ff4de-f91b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 30 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{409f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="30 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>4</sequencenumber>
+          <failureafter>1800</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="deda31f7-f91b-f111-8342-6045bd3a08f2" name="SLA 31 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{deda31f7-f91b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 31 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{429f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="31 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>5</sequencenumber>
+          <failureafter>1860</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="dc77200f-fa1b-f111-8342-6045bd3a08f2" name="SLA 35 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{dc77200f-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 35 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{449f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="35 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>6</sequencenumber>
+          <failureafter>2100</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="64eaf02d-fa1b-f111-8342-6045bd3a08f2" name="SLA 36 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{64eaf02d-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 36 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{489f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="36 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>7</sequencenumber>
+          <failureafter>2160</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="6f0d0f4c-fa1b-f111-8342-6045bd3a08f2" name="SLA 40 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{6f0d0f4c-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 40 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{296a1020-1e1c-f111-8342-7ced8da8d97e}" uiname="40 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>8</sequencenumber>
+          <failureafter>2400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="3cadaf6a-fa1b-f111-8342-6045bd3a08f2" name="SLA 44 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{3cadaf6a-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 44 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{ac3f1026-1e1c-f111-8342-7ced8da8d97e}" uiname="44 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>9</sequencenumber>
+          <failureafter>2640</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="3f8f4b89-fa1b-f111-8342-6045bd3a08f2" name="SLA 45 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{3f8f4b89-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 45 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{cf33dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="45 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>10</sequencenumber>
+          <failureafter>2700</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="bfd840a7-fa1b-f111-8342-6045bd3a08f2" name="SLA 50 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{bfd840a7-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 50 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{d733dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="50 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>11</sequencenumber>
+          <failureafter>3000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="e8fd3ec0-fa1b-f111-8342-6045bd3a08f2" name="SLA 60 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{e8fd3ec0-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 60 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{4b9f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="60 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>12</sequencenumber>
+          <failureafter>3600</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="22fc52de-fa1b-f111-8342-6045bd3a08f2" name="SLA 68 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{22fc52de-fa1b-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 68 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{4d9f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="68 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>13</sequencenumber>
+          <failureafter>4080</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d15323f8-fa1b-f111-8342-7ced8da8d97e" name="SLA 70 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{d15323f8-fa1b-f111-8342-7ced8da8d97e}</slaitemid>
+          <name>SLA 70 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{b73f1026-1e1c-f111-8342-7ced8da8d97e}" uiname="70 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>14</sequencenumber>
+          <failureafter>4200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="091cd8ec-271c-f111-8342-000d3ac0d94f" name="SLA 80 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{091cd8ec-271c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 80 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{bb3f1026-1e1c-f111-8342-7ced8da8d97e}" uiname="80 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>15</sequencenumber>
+          <failureafter>4800</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="c50c486d-281c-f111-8342-000d3ac0d94f" name="SLA 90 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{c50c486d-281c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 90 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e133dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="90 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>16</sequencenumber>
+          <failureafter>5400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="ab418186-281c-f111-8342-000d3ac0d94f" name="SLA 120 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{ab418186-281c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 120 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e433dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="120 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>17</sequencenumber>
+          <failureafter>7200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="efa680ab-281c-f111-8342-000d3ac0d94f" name="SLA 140 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{efa680ab-281c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 140 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e633dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="140 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>18</sequencenumber>
+          <failureafter>8400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="32b84e4d-291c-f111-8342-000d3ac0d94f" name="SLA 150 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{32b84e4d-291c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 150 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e933dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="150 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>19</sequencenumber>
+          <failureafter>9000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d2936cf2-291c-f111-8342-000d3ac0d94f" name="SLA 170 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{d2936cf2-291c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 170 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{519f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="170 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="ne" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>20</sequencenumber>
+          <failureafter>10200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d99eba8b-2a1c-f111-8342-000d3ac0d94f" name="SLA 240 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{d99eba8b-2a1c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 240 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{549f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="240 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>21</sequencenumber>
+          <failureafter>14400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="c04377ab-2a1c-f111-8342-000d3ac0d94f" name="SLA 320 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{c04377ab-2a1c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 320 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{579f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="320 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>22</sequencenumber>
+          <failureafter>19200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="acbc32ca-2a1c-f111-8342-000d3ac0d94f" name="SLA 400 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{acbc32ca-2a1c-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 400 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="not-in"&gt;
+                &lt;value&gt;1&lt;/value&gt;
+                &lt;value&gt;6&lt;/value&gt;
+            &lt;/condition&gt;
+            &lt;link-entity name="ubh_processo_atendimento" link-type="any" from="ubh_processo_atendimentoid" to="ubh_processo_atendimentoid"&gt;
+                &lt;filter type="and"&gt;
+                    &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{599f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="400 horas" uitype="ubh_configuracao_sla"/&gt;
+                &lt;/filter&gt;
+            &lt;/link-entity&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>23</sequencenumber>
+          <failureafter>24000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>6c3f5662-0019-f111-8342-6045bd3a08f2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_processo_atendimentoid,statecode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="9c4d8a55-1f81-f111-ab0e-00224836b0b2" name="Primeiro Atendimento 24 horas">
+          <slaid>{02c9014e-ed1b-f111-8342-7ced8da8d97e}</slaid>
+          <slaitemid>{9c4d8a55-1f81-f111-ab0e-00224836b0b2}</slaitemid>
+          <name>Primeiro Atendimento 24 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="1"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="incident"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="ubh_responsavel_atual" operator="not-null"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>24</sequencenumber>
+          <failureafter>1440</failureafter>
+          <warnafter>1200</warnafter>
+          <allowpauseresume>False</allowpauseresume>
+          <applicableentity>incident</applicableentity>
+          <msdyn_slakpiid>73a8da26-1e81-f111-ab0e-00224836b0b2</msdyn_slakpiid>
+          <changedattributelist>statuscode,ubh_responsavel_atual,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_advancedpauseconfiguration>False</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+      </SlaItems>
+    </Sla>
+    <Sla SLAId="64b0c2dd-311c-f111-8342-000d3ac0d94f" Name="Tarefa de Atendimento" PrimaryEntityLogicalName="ubh_tarefa_atendimento">
+      <SLAId>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</SLAId>
+      <ApplicableFrom>NA</ApplicableFrom>
+      <Name>Tarefa de Atendimento</Name>
+      <AllowPauseResume>0</AllowPauseResume>
+      <SLAType>1</SLAType>
+      <SLAVersion>100000001</SLAVersion>
+      <SlaItems>
+        <SlaItem slaitemid="9cc0ccf5-331c-f111-8341-000d3a890f96" name="SLA 3 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{9cc0ccf5-331c-f111-8341-000d3a890f96}</slaitemid>
+          <name>SLA 3 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{71b2b606-311c-f111-8342-7ced8da8d97e}" uiname="3 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>2</sequencenumber>
+          <failureafter>180</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="ab7a0135-4222-f111-88b2-000d3ac0d94f" name="SLA 8 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{ab7a0135-4222-f111-88b2-000d3ac0d94f}</slaitemid>
+          <name>SLA 8 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{77b2b606-311c-f111-8342-7ced8da8d97e}" uiname="8 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>3</sequencenumber>
+          <failureafter>480</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="e5007495-c122-f111-8342-000d3ac0d94f" name="SLA 10 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{e5007495-c122-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 10 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{7cb2b606-311c-f111-8342-7ced8da8d97e}" uiname="10 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>4</sequencenumber>
+          <failureafter>600</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="9b50c3dd-c622-f111-8342-6045bd3a08f2" name="SLA 15 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{9b50c3dd-c622-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 15 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{83b2b606-311c-f111-8342-7ced8da8d97e}" uiname="15 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>5</sequencenumber>
+          <failureafter>900</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="33a51d52-c722-f111-8342-6045bd3a08f2" name="SLA 16 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{33a51d52-c722-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 16 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{06f1b704-311c-f111-8342-6045bd3a08f2}" uiname="16 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>6</sequencenumber>
+          <failureafter>960</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="52536165-c822-f111-8342-6045bd3a08f2" name="SLA 20 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{52536165-c822-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 20 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{319f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="20 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>7</sequencenumber>
+          <failureafter>1200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="adcc7bec-c822-f111-8342-6045bd3a08f2" name="SLA 21 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{adcc7bec-c822-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 21 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{14f1b704-311c-f111-8342-6045bd3a08f2}" uiname="21 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>8</sequencenumber>
+          <failureafter>1260</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="42dbb3bb-c922-f111-8342-6045bd3a08f2" name="SLA 22 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{42dbb3bb-c922-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 22 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{b533dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="22 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>9</sequencenumber>
+          <failureafter>1320</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d01ce30a-ca22-f111-8342-6045bd3a08f2" name="SLA 25 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{d01ce30a-ca22-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 25 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{be33dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="25 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>10</sequencenumber>
+          <failureafter>1500</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="3b3718df-ca22-f111-8342-6045bd3a08f2" name="SLA 28 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{3b3718df-ca22-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 28 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{9ab2b606-311c-f111-8342-7ced8da8d97e}" uiname="28 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>11</sequencenumber>
+          <failureafter>1680</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="fa62b35c-cb22-f111-8342-6045bd3a08f2" name="SLA 30 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{fa62b35c-cb22-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 30 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{409f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="30 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>12</sequencenumber>
+          <failureafter>1800</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="65528c7b-0323-f111-8342-000d3ac0d94f" name="SLA 40 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{65528c7b-0323-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 40 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{296a1020-1e1c-f111-8342-7ced8da8d97e}" uiname="40 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>13</sequencenumber>
+          <failureafter>2400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="7156825e-0823-f111-8342-000d3ac0d94f" name="SLA 50 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{7156825e-0823-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 50 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{d733dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="50 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>14</sequencenumber>
+          <failureafter>3000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="f494da18-0923-f111-8342-000d3ac0d94f" name="SLA 60 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{f494da18-0923-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 60 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{4b9f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="60 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>15</sequencenumber>
+          <failureafter>3600</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="708bb3c7-0923-f111-8342-000d3ac0d94f" name="SLA 70 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{708bb3c7-0923-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 70 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{b73f1026-1e1c-f111-8342-7ced8da8d97e}" uiname="70 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>16</sequencenumber>
+          <failureafter>4200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="3e2b2510-0a23-f111-8342-000d3ac0d94f" name="SLA 80 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{3e2b2510-0a23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 80 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{bb3f1026-1e1c-f111-8342-7ced8da8d97e}" uiname="80 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>17</sequencenumber>
+          <failureafter>4800</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="5499db64-0a23-f111-8342-000d3ac0d94f" name="SLA 90 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{5499db64-0a23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 90 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e133dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="90 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>18</sequencenumber>
+          <failureafter>5400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="abe7e4c5-0a23-f111-8342-000d3ac0d94f" name="SLA 100 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{abe7e4c5-0a23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 100 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{a3b2b606-311c-f111-8342-7ced8da8d97e}" uiname="100 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>19</sequencenumber>
+          <failureafter>6000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="b723c50d-0b23-f111-8342-000d3ac0d94f" name="SLA 130 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{b723c50d-0b23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 130 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{2bf1b704-311c-f111-8342-6045bd3a08f2}" uiname="130 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>20</sequencenumber>
+          <failureafter>7800</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d1af7362-0b23-f111-8342-000d3ac0d94f" name="SLA 150 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{d1af7362-0b23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 150 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{e933dc23-1e1c-f111-8342-000d3ac0d94f}" uiname="150 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>21</sequencenumber>
+          <failureafter>9000</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="f5e08fb0-0b23-f111-8342-000d3ac0d94f" name="SLA 170 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{f5e08fb0-0b23-f111-8342-000d3ac0d94f}</slaitemid>
+          <name>SLA 170 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{c7e680ac-311c-f111-8342-000d3ac0d94f}" uiname="170 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>22</sequencenumber>
+          <failureafter>10200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="26a97d0c-0c23-f111-8342-6045bd3a08f2" name="SLA 240 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{26a97d0c-0c23-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 240 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{549f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="240 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>23</sequencenumber>
+          <failureafter>14400</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+        <SlaItem slaitemid="d1c7f158-0c23-f111-8342-6045bd3a08f2" name="SLA 320 horas">
+          <slaid>{64b0c2dd-311c-f111-8342-000d3ac0d94f}</slaid>
+          <slaitemid>{d1c7f158-0c23-f111-8342-6045bd3a08f2}</slaitemid>
+          <name>SLA 320 horas</name>
+          <applicablewhenxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
+            &lt;condition attribute="ubh_configuracao_sla" operator="eq" value="{579f6f24-1e1c-f111-8342-6045bd3a08f2}" uiname="320 horas" uitype="ubh_configuracao_sla"/&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</applicablewhenxml>
+          <successconditionsxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statecode" operator="eq" value="2"/&gt;
+                &lt;condition attribute="statecode" operator="eq" value="1"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</successconditionsxml>
+          <sequencenumber>24</sequencenumber>
+          <failureafter>19200</failureafter>
+          <warnafter>30</warnafter>
+          <allowpauseresume>True</allowpauseresume>
+          <applicableentity>ubh_tarefa_atendimento</applicableentity>
+          <msdyn_slakpiid>c76afb6d-331c-f111-8341-000d3a890f96</msdyn_slakpiid>
+          <changedattributelist>statecode,ubh_configuracao_sla,statuscode,createdon,slaid,entitlementid,customerid</changedattributelist>
+          <msdyn_pauseconfigurationxml>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical"&gt;
+    &lt;entity name="ubh_tarefa_atendimento"&gt;
+        &lt;filter type="and"&gt;
+            &lt;filter type="or"&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000003"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000001"/&gt;
+                &lt;condition attribute="statuscode" operator="eq" value="100000002"/&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</msdyn_pauseconfigurationxml>
+          <msdyn_advancedpauseconfiguration>True</msdyn_advancedpauseconfiguration>
+          <msdyn_customtimecalculation>False</msdyn_customtimecalculation>
+        </SlaItem>
+      </SlaItems>
+    </Sla>
+  </Slas>
+  <CustomControls />
+  <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="ubh_dataverse">
+      <connectionreferencedisplayname>Dataverse</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="ubh_sharedconversionservice_fa02f">
+      <connectionreferencedisplayname>Conversão de Conteúdo</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_conversionservice</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <msdyn_slakpis>
+    <msdyn_slakpi msdyn_slakpiid="6c3f5662-0019-f111-8342-6045bd3a08f2">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_advancedpauseconfiguration>0</msdyn_advancedpauseconfiguration>
+      <msdyn_applicablefromfield>createdon</msdyn_applicablefromfield>
+      <msdyn_entityname>incident</msdyn_entityname>
+      <msdyn_kpifield>resolvebykpiid</msdyn_kpifield>
+      <msdyn_name>Resolver por KPI - Data de Abertura da Solicitação</msdyn_name>
+      <statecode>1</statecode>
+      <statuscode>2</statuscode>
+    </msdyn_slakpi>
+    <msdyn_slakpi msdyn_slakpiid="73a8da26-1e81-f111-ab0e-00224836b0b2">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_advancedpauseconfiguration>0</msdyn_advancedpauseconfiguration>
+      <msdyn_applicablefromfield>createdon</msdyn_applicablefromfield>
+      <msdyn_entityname>incident</msdyn_entityname>
+      <msdyn_kpifield>firstresponsebykpiid</msdyn_kpifield>
+      <msdyn_name>KPI_PRIMEIRA_RESPOSTA</msdyn_name>
+      <statecode>1</statecode>
+      <statuscode>2</statuscode>
+    </msdyn_slakpi>
+    <msdyn_slakpi msdyn_slakpiid="c76afb6d-331c-f111-8341-000d3a890f96">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_advancedpauseconfiguration>0</msdyn_advancedpauseconfiguration>
+      <msdyn_applicablefromfield>createdon</msdyn_applicablefromfield>
+      <msdyn_entityname>ubh_tarefa_atendimento</msdyn_entityname>
+      <msdyn_kpifield>ubh_instancia_kpi_sla</msdyn_kpifield>
+      <msdyn_name>Resolver por KPI - Data de Criação da Tarefa de Atendimento</msdyn_name>
+      <statecode>1</statecode>
+      <statuscode>2</statuscode>
+    </msdyn_slakpi>
+  </msdyn_slakpis>
+  <Languages>
+    <Language>1046</Language>
+  </Languages>
+</ImportExportXml>
